@@ -1,0 +1,17 @@
+{
+  "name": "rapyd_sandbox",
+  "version": "1.0.0",
+  "description": "Rapyd sandbox for testing",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node index.mjs"
+  },
+
+  "author": "Atahualpa Erazo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.1"
+  }
+}
