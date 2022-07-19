@@ -51,14 +51,17 @@ const config = {
 // await enableWallet(config);
 
 // call retrieve wallet
-await retrieveWallet(config);
+// await retrieveWallet(config);
+
+// call create account
+await createAccount(config);
 
 async function createWallet(requestData) {
     // sample request data body
     const data = JSON.stringify({
         "first_name": "Atahualpa",
         "last_name": "Erazo",
-        "ewallet_reference_id": "2022-07-03e",
+        "ewallet_reference_id": "2022-07-04e",
         "metadata": {
             "merchant_defined": true
         },
@@ -181,6 +184,33 @@ async function retrieveWallet(requestData) {
         console.log(error.response.data);
     }
 };
+
+async function createAccount(requestData) {
+    requestData.url = "https://sandboxapi.rapyd.net/v1/issuing/bankaccounts";
+    const data = JSON.stringify({
+        "currency": "EUR",
+        "country": "DE",
+        "description": "Issue virtual account number to wallet",
+        "ewallet": "ewallet_45ed5c5671ec48617e4691c71966a55c",
+        // "ewallet": "ewallet_173ff120bb0cfb0cf9e313e3d224524a",
+        "merchant_reference_id": "account-00003",
+        "metadata": {
+            "merchant_defined": true
+        }
+    });
+    const url_path_create_account = "/v1/issuing/bankaccounts";
+    const signature = await getSignature("post", url_path_create_account, salt, access_key, secret_key, data);
+    try {
+        requestData.data = data;
+        requestData.method = "post";
+        requestData.headers = await getHeaders(signature);
+        console.log("rd:", requestData);
+        let response = await axios(requestData);
+        console.log(response.data);
+    } catch (error) {
+        console.log(error.response.data);
+    }
+}
 
 async function getHeaders(signature) {
     const headers = {

@@ -6,7 +6,6 @@
   "scripts": {
     "test": "node index.mjs"
   },
-
   "author": "Atahualpa Erazo",
   "license": "ISC",
   "dependencies": {
