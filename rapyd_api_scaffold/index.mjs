@@ -212,6 +212,27 @@ async function createAccount(requestData) {
     }
 }
 
+async function simulateBankTransfer(requestData) {
+    requestData.url = "https://sandboxapi.rapyd.net/v1/issuing/bankaccounts/bankaccounttransfertobankaccount";
+    const data = JSON.stringify({
+        "issued_bank_account": "issuing_8e1df2a8343a7fa2d22cab8391b00f2a",
+        "amount": "200",
+        "currency": "EUR"
+    });
+    const url_path_simulate_bank_transfer = "/v1/issuing/bankaccounts/bankaccounttransfertobankaccount";
+    const signature = await getSignature("post", url_path_simulate_bank_transfer, salt, access_key, secret_key, data);
+    try {
+        requestData.data = data;
+        requestData.method = "post";
+        requestData.headers = await getHeaders(signature);
+        console.log("rd:", requestData);
+        let response = await axios(requestData);
+        console.log(response.data);
+    } catch (error) {
+        console.log(error.response.data);
+    }
+}
+
 async function getHeaders(signature) {
     const headers = {
         "access_key": process.env.ACCESS_KEY,
