@@ -1,0 +1,5 @@
+node_modules/
+
+# Secrets and sample data
+rapyd-spacex-firebase-adminsdk-3s9xc-143d46d7d6.json
+.env
