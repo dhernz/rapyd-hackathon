@@ -37,19 +37,27 @@ let httpWalletServices = functions.https.onCall(async (data, context) => {
   const method = data.method;
   data.url = config.url;
   data.method = config.method;
-
+  let response = null;
   switch(method) {
     case "create":
-      let response = await createWallet(data);
+      response = await createWallet(data);
       return response;
       break;
     case "update":
+      response = await updateWallet(data);
+      return response;
       break;
     case "disable":
+      response = await disableWallet(data);
+      return response;
       break;
     case "enable":
+      response = await enableWallet(data);
+      return response;
       break;
     case "retrieve":
+      response = await retrieveWallet(data);
+      return response;
       break;
   }
 });
@@ -83,128 +91,112 @@ function createWallet(requestData) {
   });
 };
 
-async function updateWallet(requestData) {
-  requestData.data = JSON.stringify({
-      "email": "a.erazo@beanar.io", // wallet owner email (figure out if this can be updated)
-      "ewallet": "ewallet_92174c69e1241bd6400ced235205734b", // id returned on creation, required if phone number is not used
-      "ewallet_reference_id": "2022-07-03de", // 
-      // "first_name": "Atahualpa", // wallet owner first name (figure out if this can be updated)
-      // "last_name": "Erazo", // wallet owner last name (figure out if this can be updated)
-      "metadata": {
-          "merchant_defined": "updated"
+function updateWallet(requestData) {
+  return new Promise( async (resolve, reject) => {
+    try {
+      const data = JSON.stringify(requestData);
+      // requestData.data = JSON.stringify({
+          // "email": "a.erazo@beanar.io", // wallet owner email (figure out if this can be updated)
+          // "ewallet": "ewallet_92174c69e1241bd6400ced235205734b", // id returned on creation, required if phone number is not used
+          // "ewallet_reference_id": "2022-07-03de", // 
+          // "first_name": "Atahualpa", // wallet owner first name (figure out if this can be updated)
+          // "last_name": "Erazo", // wallet owner last name (figure out if this can be updated)
+          // "metadata": {
+          //     "merchant_defined": "updated"
+          // }
+          // "phone_number": "+14155551234" // wallet owner phone number (figure out if this can be updated)
+      // });
+      const signature = await getSignature("put", url_path, salt, access_key, secret_key, data);
+      try {
+          requestData.method = "put";
+          requestData.headers = await getHeaders(signature);
+          console.log(requestData);
+          let response = await axios(requestData);
+          console.log(response.data);
+      } catch (error) {
+          console.log(error.response.data);
       }
-      // "phone_number": "+14155551234" // wallet owner phone number (figure out if this can be updated)
+    } catch (error) {
+      console.log(error);
+      reject(error);
+    }
   });
-  const signature = await getSignature("put", url_path, salt, access_key, secret_key, requestData.data);
-  try {
-      requestData.method = "put";
-      requestData.headers = await getHeaders(signature);
-      console.log(requestData);
-      let response = await axios(requestData);
-      console.log(response.data);
-  } catch (error) {
-      console.log(error.response.data);
-  }
 };
 
-async function disableWallet(requestData) {
-  requestData.url = requestData.url+"/disable"
-  requestData.data = JSON.stringify({
-      "ewallet": "ewallet_92174c69e1241bd6400ced235205734b" // id returned on creation, required if phone number is not used
-      // "phone_number": "+14155551234" // wallet owner phone number
-  });
-  const signature = await getSignature("put", url_path+"/disable", salt, access_key, secret_key, requestData.data);
-  try {
-      requestData.method = "put";
-      requestData.headers = await getHeaders(signature);
-      console.log(requestData);
-      let response = await axios(requestData);
-      console.log(response.data);
-  } catch (error) {
-      console.log(error.response.data);
-  }
-};
-
-async function enableWallet(requestData) {
-  requestData.url = requestData.url+"/enable"
-  requestData.data = JSON.stringify({
-      "ewallet": "ewallet_92174c69e1241bd6400ced235205734b" // id returned on creation, required if phone number is not used
-      // "phone_number": "+14155551234" // wallet owner phone number
-  });
-  const signature = await getSignature("put", url_path+"/enable", salt, access_key, secret_key, requestData.data);
-  try {
-      requestData.method = "put";
-      requestData.headers = await getHeaders(signature);
-      console.log(requestData);
-      let response = await axios(requestData);
-      console.log(response.data);
-  } catch (error) {
-      console.log(error.response.data);
-  }
-};
-
-async function retrieveWallet(requestData) {
-  requestData.data = "";
-  requestData.url = requestData.url+"/ewallet_92174c69e1241bd6400ced235205734b";
-  const signature = await getSignature("get", url_path+"/ewallet_92174c69e1241bd6400ced235205734b", salt, access_key, secret_key, requestData.data);
-  try {
-      requestData.method = "get";
-      requestData.headers = await getHeaders(signature);
-      console.log(requestData);
-      let response = await axios(requestData);
-      console.log(response.data);
-  } catch (error) {
-      console.log(error.response.data);
-  }
-};
-
-async function createAccount(requestData) {
-  requestData.url = "https://sandboxapi.rapyd.net/v1/issuing/bankaccounts";
-  const data = JSON.stringify({
-      "currency": "EUR",
-      "country": "DE",
-      "description": "Issue virtual account number to wallet",
-      "ewallet": "ewallet_45ed5c5671ec48617e4691c71966a55c",
-      // "ewallet": "ewallet_173ff120bb0cfb0cf9e313e3d224524a",
-      "merchant_reference_id": "account-00003",
-      "metadata": {
-          "merchant_defined": true
+function disableWallet(requestData) {
+  return new Promise( async (resolve, reject) => {
+    try {
+      requestData.url = requestData.url+"/disable";
+      const data = JSON.stringify(requestData);
+      // requestData.data = JSON.stringify({
+      //     "ewallet": "ewallet_92174c69e1241bd6400ced235205734b" // id returned on creation, required if phone number is not used
+      //     // "phone_number": "+14155551234" // wallet owner phone number
+      // });
+      const signature = await getSignature("put", url_path+"/disable", salt, access_key, secret_key, data);
+      try {
+          requestData.method = "put";
+          requestData.headers = await getHeaders(signature);
+          console.log(requestData);
+          let response = await axios(requestData);
+          console.log(response.data);
+      } catch (error) {
+          console.log(error.response.data);
       }
+    } catch (error) {
+      console.log(error);
+      reject(error);
+    }
   });
-  const url_path_create_account = "/v1/issuing/bankaccounts";
-  const signature = await getSignature("post", url_path_create_account, salt, access_key, secret_key, data);
-  try {
-      requestData.data = data;
-      requestData.method = "post";
-      requestData.headers = await getHeaders(signature);
-      console.log("rd:", requestData);
-      let response = await axios(requestData);
-      console.log(response.data);
-  } catch (error) {
-      console.log(error.response.data);
-  }
-}
+};
 
-async function simulateBankTransfer(requestData) {
-  requestData.url = "https://sandboxapi.rapyd.net/v1/issuing/bankaccounts/bankaccounttransfertobankaccount";
-  const data = JSON.stringify({
-      "issued_bank_account": "issuing_8e1df2a8343a7fa2d22cab8391b00f2a",
-      "amount": "200",
-      "currency": "EUR"
+function enableWallet(requestData) {
+  return new Promise( async (resolve, reject) => {
+    try {
+      requestData.url = requestData.url+"/enable"
+      const data = JSON.stringify(requestData);
+      // requestData.data = JSON.stringify({
+      //     "ewallet": "ewallet_92174c69e1241bd6400ced235205734b" // id returned on creation, required if phone number is not used
+      //     // "phone_number": "+14155551234" // wallet owner phone number
+      // });
+      const signature = await getSignature("put", url_path+"/enable", salt, access_key, secret_key, data);
+      try {
+          requestData.method = "put";
+          requestData.headers = await getHeaders(signature);
+          console.log(requestData);
+          let response = await axios(requestData);
+          console.log(response.data);
+          resolve(response.data);
+      } catch (error) {
+          console.log(error.response.data);
+          reject(error.response.data);
+      }
+    } catch (error) {
+      console.log(error);
+      reject(error);
+    }
   });
-  const url_path_simulate_bank_transfer = "/v1/issuing/bankaccounts/bankaccounttransfertobankaccount";
-  const signature = await getSignature("post", url_path_simulate_bank_transfer, salt, access_key, secret_key, data);
-  try {
-      requestData.data = data;
-      requestData.method = "post";
-      requestData.headers = await getHeaders(signature);
-      console.log("rd:", requestData);
-      let response = await axios(requestData);
-      console.log(response.data);
-  } catch (error) {
-      console.log(error.response.data);
-  }
-}
+};
+
+function retrieveWallet(requestData) {
+  return new Promise( async (resolve, reject) => {
+    const wallet = requestData.eWallet;
+    const data = "";
+    // requestData.url = requestData.url+"/ewallet_92174c69e1241bd6400ced235205734b";
+    requestData.url = requestData.url+"/"+wallet;
+    const signature = await getSignature("get", url_path+"/"+wallet, salt, access_key, secret_key, data);
+    try {
+        requestData.method = "get";
+        requestData.headers = await getHeaders(signature);
+        console.log(requestData);
+        let response = await axios(requestData);
+        console.log(response.data);
+        resolve(response.data);
+    } catch (error) {
+        console.log(error.response.data);
+        reject(error.response.data);
+    }
+  });
+};
 
 async function getHeaders(signature) {
   const headers = {

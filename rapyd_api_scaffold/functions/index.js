@@ -4,6 +4,7 @@ import admin from 'firebase-admin';
 
 import {httpTest} from "./http/test.f.mjs";
 import {httpWalletServices} from "./http/wallet/services.mjs";
+import {httpAccountServices} from "./http/account/services.mjs";
 
 import {readFile} from 'fs/promises';
 const serviceAccount = JSON.parse(
@@ -25,3 +26,4 @@ admin.firestore().settings(settings);
 // exports = httpTest;
 export {httpTest};
 export {httpWalletServices};
+export {httpAccountServices};
