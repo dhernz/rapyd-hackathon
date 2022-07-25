@@ -1,6 +1,7 @@
 
 // Firebase Functions SDK
 import functions from "firebase-functions";
+import admin from "firebase-admin";
 import axios from "axios";
 import CryptoJS from "crypto-js";
 import "dotenv/config";
@@ -67,16 +68,24 @@ function createAccount(requestData) {
       const url_path_create_account = "/v1/issuing/bankaccounts";
       const signature = await getSignature("post", url_path_create_account, salt, access_key, secret_key, data);
       try {
-          requestData.data = data;
-          requestData.method = "post";
-          requestData.headers = await getHeaders(signature);
-          console.log("rd:", requestData);
-          let response = await axios(requestData);
-          console.log(response.data);
-          resolve(response.data);
+        requestData.data = data;
+        requestData.method = "post";
+        requestData.headers = await getHeaders(signature);
+        console.log("rd:", requestData);
+        let response = await axios(requestData);
+        console.log("response.data...:", response.data);
+        // Insert account into wallet
+        try {
+          const db = admin.firestore();
+          let account = await db.collection("wallet").doc(requestData.ewallet).collection("accounts").doc(response.data.data.id).create(response.data.data.bank_account);
+          console.log("account", account);
+        } catch (error) {
+          console.log("error inserting account into wallet...:", error);
+        }
+        resolve(response.data);
       } catch (error) {
-          console.log(error.response.data);
-          reject(error.response.data);
+        console.log("error attempting to create account...: ", error.response.data);
+        reject(error.response.data);
       }
     } catch (error) {
       console.log(error);
@@ -130,6 +139,5 @@ async function getHeaders(signature) {
   return headers;
 };
 
-// module.exports = {httpTest};
 export {httpAccountServices};
 
