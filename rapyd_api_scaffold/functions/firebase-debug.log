@@ -4092,3 +4092,767 @@ INFO: Detected non-HTTP/2 connection.
 [debug] [2022-07-25T19:05:15.814Z] Jul 25, 2022 1:05:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
 INFO: Detected non-HTTP/2 connection.
  {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:05:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:06:15.840Z] Jul 25, 2022 1:06:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:06:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:07:15.864Z] Jul 25, 2022 1:07:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:07:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:08:15.892Z] Jul 25, 2022 1:08:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:08:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:09:15.929Z] Jul 25, 2022 1:09:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:09:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:10:15.963Z] Jul 25, 2022 1:10:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:10:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:11:15.998Z] Jul 25, 2022 1:11:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:11:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:12:16.027Z] Jul 25, 2022 1:12:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:12:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:12:50.169Z] File /Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/http/payment/services.mjs changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/http/payment/services.mjs changed, reloading triggers"}}
+[debug] [2022-07-25T19:12:51.185Z] [worker-pool] Shutting down IDLE worker (us-central1-httpPaymentServices) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-httpPaymentServices)"}}
+[debug] [2022-07-25T19:12:51.186Z] [worker-us-central1-httpPaymentServices-7115f201-5f35-4153-889f-c2fe1080519d]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-httpPaymentServices-7115f201-5f35-4153-889f-c2fe1080519d]: FINISHING"}}
+[debug] [2022-07-25T19:12:51.241Z] Validating nodejs source
+[debug] [2022-07-25T19:12:53.253Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "type": "module",
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T19:12:53.255Z] Building nodejs source
+[debug] [2022-07-25T19:12:53.255Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T19:12:53.294Z] [worker-us-central1-httpPaymentServices-7115f201-5f35-4153-889f-c2fe1080519d]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-httpPaymentServices-7115f201-5f35-4153-889f-c2fe1080519d]: exited"}}
+[debug] [2022-07-25T19:12:53.294Z] [worker-us-central1-httpPaymentServices-7115f201-5f35-4153-889f-c2fe1080519d]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-httpPaymentServices-7115f201-5f35-4153-889f-c2fe1080519d]: FINISHED"}}
+[debug] [2022-07-25T19:12:53.296Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T19:12:53.533Z] Serving at port 9006
+
+[debug] [2022-07-25T19:12:53.760Z] salt: 586a1e69c97aedd870312f69
+
+[debug] [2022-07-25T19:12:53.760Z] salt: cf821e5b7987d63d9bbd36d8
+
+[debug] [2022-07-25T19:12:53.761Z] bc004732eeba557bb8f3f12d
+salt...: bc004732eeba557bb8f3f12d
+
+[debug] [2022-07-25T19:12:53.857Z] Got response from /__/functions.yaml {"endpoints":{"httpAccountServices":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"httpAccountServices"},"httpPaymentServices":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"httpPaymentServices"},"httpTest":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"httpTest"},"httpWalletServices":{"platform":"gcfv1","labels":{},"callableTrigger":{},"entryPoint":"httpWalletServices"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T19:12:53.864Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T19:13:01.476Z] Jul 25, 2022 1:13:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:13:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:14:01.503Z] Jul 25, 2022 1:14:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:14:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:15:01.533Z] Jul 25, 2022 1:15:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:15:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:16:01.557Z] Jul 25, 2022 1:16:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:16:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:17:01.585Z] Jul 25, 2022 1:17:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:17:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:18:01.068Z] Jul 25, 2022 1:18:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:18:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:19:01.099Z] Jul 25, 2022 1:19:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:19:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:20:01.121Z] Jul 25, 2022 1:20:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:20:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:21:01.141Z] Jul 25, 2022 1:21:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:21:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:22:01.164Z] Jul 25, 2022 1:22:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:22:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:23:01.196Z] Jul 25, 2022 1:23:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:23:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:24:01.220Z] Jul 25, 2022 1:24:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:24:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:25:01.256Z] Jul 25, 2022 1:25:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:25:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:26:01.285Z] Jul 25, 2022 1:26:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:26:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:27:01.308Z] Jul 25, 2022 1:27:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:27:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:28:01.333Z] Jul 25, 2022 1:28:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:28:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:29:01.361Z] Jul 25, 2022 1:29:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:29:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:30:01.379Z] Jul 25, 2022 1:30:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:30:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:31:01.401Z] Jul 25, 2022 1:31:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:31:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:32:01.428Z] Jul 25, 2022 1:32:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:32:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:33:01.447Z] Jul 25, 2022 1:33:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:33:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:34:01.480Z] Jul 25, 2022 1:34:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:34:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:35:01.509Z] Jul 25, 2022 1:35:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:35:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:36:01.539Z] Jul 25, 2022 1:36:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:36:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:37:01.561Z] Jul 25, 2022 1:37:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:37:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:38:01.587Z] Jul 25, 2022 1:38:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:38:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:39:01.615Z] Jul 25, 2022 1:39:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:39:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:40:01.641Z] Jul 25, 2022 1:40:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:40:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:41:01.668Z] Jul 25, 2022 1:41:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:41:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:42:01.701Z] Jul 25, 2022 1:42:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:42:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:43:01.729Z] Jul 25, 2022 1:43:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:43:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:44:01.762Z] Jul 25, 2022 1:44:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:44:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:45:01.781Z] Jul 25, 2022 1:45:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:45:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:46:01.802Z] Jul 25, 2022 1:46:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:46:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:47:01.840Z] Jul 25, 2022 1:47:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:47:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:48:01.864Z] Jul 25, 2022 1:48:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:48:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:49:01.892Z] Jul 25, 2022 1:49:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:49:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:50:01.923Z] Jul 25, 2022 1:50:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:50:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:51:01.956Z] Jul 25, 2022 1:51:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:51:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:52:01.982Z] Jul 25, 2022 1:52:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:52:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:53:02.008Z] Jul 25, 2022 1:53:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:53:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:54:02.046Z] Jul 25, 2022 1:54:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:54:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:55:02.068Z] Jul 25, 2022 1:55:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:55:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:56:02.096Z] Jul 25, 2022 1:56:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:56:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:57:02.127Z] Jul 25, 2022 1:57:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:57:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:58:02.167Z] Jul 25, 2022 1:58:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:58:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T19:59:02.201Z] Jul 25, 2022 1:59:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 1:59:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:00:02.258Z] Jul 25, 2022 2:00:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:00:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:01:02.284Z] Jul 25, 2022 2:01:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:01:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:02:02.314Z] Jul 25, 2022 2:02:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:02:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:03:02.355Z] Jul 25, 2022 2:03:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:03:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:04:02.400Z] Jul 25, 2022 2:04:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:04:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:05:02.425Z] Jul 25, 2022 2:05:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:05:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:06:02.451Z] Jul 25, 2022 2:06:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:06:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:07:02.484Z] Jul 25, 2022 2:07:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:07:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:07:50.300Z] Jul 25, 2022 2:07:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:07:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:08:50.332Z] Jul 25, 2022 2:08:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:08:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:09:50.357Z] Jul 25, 2022 2:09:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:09:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:10:50.378Z] Jul 25, 2022 2:10:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:10:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:11:50.411Z] Jul 25, 2022 2:11:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:11:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:12:50.442Z] Jul 25, 2022 2:12:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:12:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:13:50.473Z] Jul 25, 2022 2:13:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:13:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:14:50.498Z] Jul 25, 2022 2:14:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:14:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:15:50.534Z] Jul 25, 2022 2:15:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:15:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:16:50.563Z] Jul 25, 2022 2:16:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:16:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:17:50.595Z] Jul 25, 2022 2:17:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:17:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:18:50.652Z] Jul 25, 2022 2:18:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:18:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:19:50.696Z] Jul 25, 2022 2:19:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:19:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:20:50.758Z] Jul 25, 2022 2:20:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:20:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:21:50.791Z] Jul 25, 2022 2:21:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:21:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:22:50.821Z] Jul 25, 2022 2:22:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:22:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:22:53.304Z] Jul 25, 2022 2:22:53 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:22:53 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2022-07-25T20:22:53.371Z] Jul 25, 2022 2:22:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:22:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:23:07.490Z] Jul 25, 2022 2:23:07 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:23:07 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2022-07-25T20:53:49.420Z] Jul 25, 2022 2:53:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:53:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:53:55.041Z] Jul 25, 2022 2:53:54 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:53:54 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\nINFO: Websocket client disconnected\n"}}
+[debug] [2022-07-25T20:53:55.964Z] Jul 25, 2022 2:53:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:53:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T20:54:02.767Z] Jul 25, 2022 2:54:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:54:02 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2022-07-25T20:59:44.337Z] Jul 25, 2022 2:59:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 2:59:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:06:28.544Z] Jul 25, 2022 3:06:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:06:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:07:28.599Z] Jul 25, 2022 3:07:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:07:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:08:28.637Z] Jul 25, 2022 3:08:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:08:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:09:28.691Z] Jul 25, 2022 3:09:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:09:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:10:28.734Z] Jul 25, 2022 3:10:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:10:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:11:28.771Z] Jul 25, 2022 3:11:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:11:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:12:28.802Z] Jul 25, 2022 3:12:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:12:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:13:28.862Z] Jul 25, 2022 3:13:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:13:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:14:28.896Z] Jul 25, 2022 3:14:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:14:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:15:28.925Z] Jul 25, 2022 3:15:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:15:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:16:28.963Z] Jul 25, 2022 3:16:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:16:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:17:28.999Z] Jul 25, 2022 3:17:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:17:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:18:29.027Z] Jul 25, 2022 3:18:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:18:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:19:29.072Z] Jul 25, 2022 3:19:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:19:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:20:29.119Z] Jul 25, 2022 3:20:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:20:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:21:29.158Z] Jul 25, 2022 3:21:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:21:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:22:29.194Z] Jul 25, 2022 3:22:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:22:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:23:29.238Z] Jul 25, 2022 3:23:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:23:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:24:29.266Z] Jul 25, 2022 3:24:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:24:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:25:29.288Z] Jul 25, 2022 3:25:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:25:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:26:29.326Z] Jul 25, 2022 3:26:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:26:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:27:29.367Z] Jul 25, 2022 3:27:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:27:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:28:29.402Z] Jul 25, 2022 3:28:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:28:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:28:59.981Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-25T21:28:59.985Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-25T21:28:59.992Z] Accepted request POST /rapyd-spacex/us-central1/httpPaymentServices --> us-central1-httpPaymentServices
+[debug] [2022-07-25T21:28:59.998Z] [worker-pool] Cleaned up workers for us-central1-httpPaymentServices: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-httpPaymentServices: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-07-25T21:29:00.093Z] [worker-pool] addWorker(us-central1-httpPaymentServices) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-httpPaymentServices)"}}
+[debug] [2022-07-25T21:29:00.094Z] [worker-pool] Adding worker with key us-central1-httpPaymentServices, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-httpPaymentServices, total=1"}}
+[debug] [2022-07-25T21:29:00.094Z] [worker-pool] submitWork(triggerId=us-central1-httpPaymentServices) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-httpPaymentServices)"}}
+[debug] [2022-07-25T21:29:00.095Z] [worker-us-central1-httpPaymentServices-7d766752-6161-403b-a4c2-ebebaf5cbf65]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-httpPaymentServices-7d766752-6161-403b-a4c2-ebebaf5cbf65]: BUSY"}}
+[debug] [2022-07-25T21:29:02.385Z] [runtime-status] [35886] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-07-25T21:29:02.387Z] [runtime-status] [35886] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-07-25T21:29:02.388Z] [runtime-status] [35886] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-07-25T21:29:02.388Z] [runtime-status] [35886] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-07-25T21:29:02.467Z] [runtime-status] [35886] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-07-25T21:29:02.467Z] [runtime-status] [35886] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-07-25T21:29:02.468Z] [runtime-status] [35886] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-07-25T21:29:02.469Z] [runtime-status] [35886] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-07-25T21:29:02.470Z] [runtime-status] [35886] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-07-25T21:29:02.470Z] [runtime-status] [35886] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-07-25T21:29:02.470Z] [runtime-status] [35886] Functions runtime initialized. {"cwd":"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions","node_version":"16.15.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Functions runtime initialized. {\"cwd\":\"/Users/ataerazo/Documents/Programming/rapyd-hackathon/rapyd_api_scaffold/functions\",\"node_version\":\"16.15.1\"}"}}
+[info] >  salt: 28c87321984a3b8d6748de25 {"user":"salt: 28c87321984a3b8d6748de25","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m salt: 28c87321984a3b8d6748de25"}}
+[info] >  salt: c5c35cb0983fba508962303b {"user":"salt: c5c35cb0983fba508962303b","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m salt: c5c35cb0983fba508962303b"}}
+[info] >  432fbf75b7d9f4bc4e63b1ea {"user":"432fbf75b7d9f4bc4e63b1ea","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m 432fbf75b7d9f4bc4e63b1ea"}}
+[info] >  salt...: 432fbf75b7d9f4bc4e63b1ea {"user":"salt...: 432fbf75b7d9f4bc4e63b1ea","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m salt...: 432fbf75b7d9f4bc4e63b1ea"}}
+[debug] [2022-07-25T21:29:02.745Z] [runtime-status] [35886] Beginning invocation function httpPaymentServices! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Beginning invocation function httpPaymentServices!"}}
+[info] i  functions: Beginning execution of "httpPaymentServices" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"Beginning execution of \"httpPaymentServices\""}}
+[debug] [2022-07-25T21:29:02.747Z] [runtime-status] [35886] Running httpPaymentServices in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Running httpPaymentServices in signature http"}}
+[debug] [2022-07-25T21:29:02.750Z] [runtime-status] [35886] Attempting to listen to port: /var/folders/8v/h1h8l7c50w7dvg14ht1zh9540000gn/T/fire_emu_4807792239e169f9.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Attempting to listen to port: /var/folders/8v/h1h8l7c50w7dvg14ht1zh9540000gn/T/fire_emu_4807792239e169f9.sock"}}
+[debug] [2022-07-25T21:29:02.790Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-25T21:29:02.792Z] [functions] Got req.url=/rapyd-spacex/us-central1/httpPaymentServices, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/rapyd-spacex/us-central1/httpPaymentServices, mapping to path=/"}}
+[debug] [2022-07-25T21:29:02.821Z] [runtime-status] [35886] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Ephemeral server handling POST request"}}
+[info] >  {"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"} {"user":{"verifications":{"app":"MISSING","auth":"MISSING"},"logging.googleapis.com/labels":{"firebase-log-type":"callable-request-verification"},"severity":"INFO","message":"Callable request verification passed"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"verifications\":{\"app\":\"MISSING\",\"auth\":\"MISSING\"},\"logging.googleapis.com/labels\":{\"firebase-log-type\":\"callable-request-verification\"},\"severity\":\"INFO\",\"message\":\"Callable request verification passed\"}"}}
+[debug] [2022-07-25T21:29:02.823Z] [runtime-status] [35886] No callable functions auth found {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] No callable functions auth found"}}
+[info] >  to_sign: post/v1/payments432fbf75b7d9f4bc4e63b1ea1658784532F1674F23560DE0B6FF17ba9fa54be0f947871cbe8e096871659ba44f0d2e4464492c0f9d265d4a65cb95888ff2603a7d48c9{"method":"post","amount":10000,"currency":"USD","description":"Payment by bank transfer","merchant_reference_id":"fc-spctkt0001","payment_method":{"type":"us_sameday_ach_bank","name":"Same day US ACH debit","category":"bank_transfer","image":"https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png","country":"US","payment_flow_type":"bank_transfer","currencies":["USD"],"fields":{"first_name":"Carlos","last_name":"Erazo","company_name":"Beanario Software","account_type":"SAVING","account_number":"5002001485351098","routing_number":"051504597","proof_of_authorization":true},"status":1,"is_cancelable":false,"payment_options":[],"is_expirable":false,"is_online":false,"is_refundable":false,"minimum_expiration_seconds":1,"maximum_expiration_seconds":1209600,"virtual_payment_method_type":"","is_virtual":false,"multiple_overage_allowed":false,"amount_range_per_currency":[{"currency":"USD","maximum_amount":null,"minimum_amount":null}],"is_tokenizable":false,"supported_digital_wallet_providers":[]},"ewallets":[{"ewallet":"ewallet_173ff120bb0cfb0cf9e313e3d224524a","percentage":100}],"metadata":{"merchant_defined":true},"url":"https://sandboxapi.rapyd.net/v1/payments"} {"user":"to_sign: post/v1/payments432fbf75b7d9f4bc4e63b1ea1658784532F1674F23560DE0B6FF17ba9fa54be0f947871cbe8e096871659ba44f0d2e4464492c0f9d265d4a65cb95888ff2603a7d48c9{\"method\":\"post\",\"amount\":10000,\"currency\":\"USD\",\"description\":\"Payment by bank transfer\",\"merchant_reference_id\":\"fc-spctkt0001\",\"payment_method\":{\"type\":\"us_sameday_ach_bank\",\"name\":\"Same day US ACH debit\",\"category\":\"bank_transfer\",\"image\":\"https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png\",\"country\":\"US\",\"payment_flow_type\":\"bank_transfer\",\"currencies\":[\"USD\"],\"fields\":{\"first_name\":\"Carlos\",\"last_name\":\"Erazo\",\"company_name\":\"Beanario Software\",\"account_type\":\"SAVING\",\"account_number\":\"5002001485351098\",\"routing_number\":\"051504597\",\"proof_of_authorization\":true},\"status\":1,\"is_cancelable\":false,\"payment_options\":[],\"is_expirable\":false,\"is_online\":false,\"is_refundable\":false,\"minimum_expiration_seconds\":1,\"maximum_expiration_seconds\":1209600,\"virtual_payment_method_type\":\"\",\"is_virtual\":false,\"multiple_overage_allowed\":false,\"amount_range_per_currency\":[{\"currency\":\"USD\",\"maximum_amount\":null,\"minimum_amount\":null}],\"is_tokenizable\":false,\"supported_digital_wallet_providers\":[]},\"ewallets\":[{\"ewallet\":\"ewallet_173ff120bb0cfb0cf9e313e3d224524a\",\"percentage\":100}],\"metadata\":{\"merchant_defined\":true},\"url\":\"https://sandboxapi.rapyd.net/v1/payments\"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m to_sign: post/v1/payments432fbf75b7d9f4bc4e63b1ea1658784532F1674F23560DE0B6FF17ba9fa54be0f947871cbe8e096871659ba44f0d2e4464492c0f9d265d4a65cb95888ff2603a7d48c9{\"method\":\"post\",\"amount\":10000,\"currency\":\"USD\",\"description\":\"Payment by bank transfer\",\"merchant_reference_id\":\"fc-spctkt0001\",\"payment_method\":{\"type\":\"us_sameday_ach_bank\",\"name\":\"Same day US ACH debit\",\"category\":\"bank_transfer\",\"image\":\"https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png\",\"country\":\"US\",\"payment_flow_type\":\"bank_transfer\",\"currencies\":[\"USD\"],\"fields\":{\"first_name\":\"Carlos\",\"last_name\":\"Erazo\",\"company_name\":\"Beanario Software\",\"account_type\":\"SAVING\",\"account_number\":\"5002001485351098\",\"routing_number\":\"051504597\",\"proof_of_authorization\":true},\"status\":1,\"is_cancelable\":false,\"payment_options\":[],\"is_expirable\":false,\"is_online\":false,\"is_refundable\":false,\"minimum_expiration_seconds\":1,\"maximum_expiration_seconds\":1209600,\"virtual_payment_method_type\":\"\",\"is_virtual\":false,\"multiple_overage_allowed\":false,\"amount_range_per_currency\":[{\"currency\":\"USD\",\"maximum_amount\":null,\"minimum_amount\":null}],\"is_tokenizable\":false,\"supported_digital_wallet_providers\":[]},\"ewallets\":[{\"ewallet\":\"ewallet_173ff120bb0cfb0cf9e313e3d224524a\",\"percentage\":100}],\"metadata\":{\"merchant_defined\":true},\"url\":\"https://sandboxapi.rapyd.net/v1/payments\"}"}}
+[info] >  signature:  ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA== {"user":"signature:  ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA==","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m signature:  ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA=="}}
+[info] >  headers: { {"user":"headers: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m headers: {"}}
+[info] >    access_key: 'F1674F23560DE0B6FF17', {"user":"  access_key: 'F1674F23560DE0B6FF17',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   access_key: 'F1674F23560DE0B6FF17',"}}
+[info] >    'Content-Type': 'application/json', {"user":"  'Content-Type': 'application/json',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   'Content-Type': 'application/json',"}}
+[info] >    salt: '432fbf75b7d9f4bc4e63b1ea', {"user":"  salt: '432fbf75b7d9f4bc4e63b1ea',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   salt: '432fbf75b7d9f4bc4e63b1ea',"}}
+[info] >    signature: 'ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA==', {"user":"  signature: 'ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA==',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   signature: 'ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA==',"}}
+[info] >    timestamp: '1658784532' {"user":"  timestamp: '1658784532'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   timestamp: '1658784532'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  rd: { {"user":"rd: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m rd: {"}}
+[info] >    method: 'post', {"user":"  method: 'post',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   method: 'post',"}}
+[info] >    amount: 10000, {"user":"  amount: 10000,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   amount: 10000,"}}
+[info] >    currency: 'USD', {"user":"  currency: 'USD',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   currency: 'USD',"}}
+[info] >    description: 'Payment by bank transfer', {"user":"  description: 'Payment by bank transfer',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   description: 'Payment by bank transfer',"}}
+[info] >    merchant_reference_id: 'fc-spctkt0001', {"user":"  merchant_reference_id: 'fc-spctkt0001',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   merchant_reference_id: 'fc-spctkt0001',"}}
+[info] >    payment_method: { {"user":"  payment_method: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   payment_method: {"}}
+[info] >      type: 'us_sameday_ach_bank', {"user":"    type: 'us_sameday_ach_bank',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     type: 'us_sameday_ach_bank',"}}
+[info] >      name: 'Same day US ACH debit', {"user":"    name: 'Same day US ACH debit',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     name: 'Same day US ACH debit',"}}
+[info] >      category: 'bank_transfer', {"user":"    category: 'bank_transfer',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     category: 'bank_transfer',"}}
+[info] >      image: 'https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png', {"user":"    image: 'https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     image: 'https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png',"}}
+[info] >      country: 'US', {"user":"    country: 'US',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     country: 'US',"}}
+[info] >      payment_flow_type: 'bank_transfer', {"user":"    payment_flow_type: 'bank_transfer',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     payment_flow_type: 'bank_transfer',"}}
+[info] >      currencies: [ 'USD' ], {"user":"    currencies: [ 'USD' ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     currencies: [ 'USD' ],"}}
+[info] >      fields: { {"user":"    fields: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     fields: {"}}
+[info] >        first_name: 'Carlos', {"user":"      first_name: 'Carlos',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       first_name: 'Carlos',"}}
+[info] >        last_name: 'Erazo', {"user":"      last_name: 'Erazo',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       last_name: 'Erazo',"}}
+[info] >        company_name: 'Beanario Software', {"user":"      company_name: 'Beanario Software',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       company_name: 'Beanario Software',"}}
+[info] >        account_type: 'SAVING', {"user":"      account_type: 'SAVING',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       account_type: 'SAVING',"}}
+[info] >        account_number: '5002001485351098', {"user":"      account_number: '5002001485351098',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       account_number: '5002001485351098',"}}
+[info] >        routing_number: '051504597', {"user":"      routing_number: '051504597',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       routing_number: '051504597',"}}
+[info] >        proof_of_authorization: true {"user":"      proof_of_authorization: true","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       proof_of_authorization: true"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      status: 1, {"user":"    status: 1,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     status: 1,"}}
+[info] >      is_cancelable: false, {"user":"    is_cancelable: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     is_cancelable: false,"}}
+[info] >      payment_options: [], {"user":"    payment_options: [],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     payment_options: [],"}}
+[info] >      is_expirable: false, {"user":"    is_expirable: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     is_expirable: false,"}}
+[info] >      is_online: false, {"user":"    is_online: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     is_online: false,"}}
+[info] >      is_refundable: false, {"user":"    is_refundable: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     is_refundable: false,"}}
+[info] >      minimum_expiration_seconds: 1, {"user":"    minimum_expiration_seconds: 1,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     minimum_expiration_seconds: 1,"}}
+[info] >      maximum_expiration_seconds: 1209600, {"user":"    maximum_expiration_seconds: 1209600,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     maximum_expiration_seconds: 1209600,"}}
+[info] >      virtual_payment_method_type: '', {"user":"    virtual_payment_method_type: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     virtual_payment_method_type: '',"}}
+[info] >      is_virtual: false, {"user":"    is_virtual: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     is_virtual: false,"}}
+[info] >      multiple_overage_allowed: false, {"user":"    multiple_overage_allowed: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     multiple_overage_allowed: false,"}}
+[info] >      amount_range_per_currency: [ [Object] ], {"user":"    amount_range_per_currency: [ [Object] ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     amount_range_per_currency: [ [Object] ],"}}
+[info] >      is_tokenizable: false, {"user":"    is_tokenizable: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     is_tokenizable: false,"}}
+[info] >      supported_digital_wallet_providers: [] {"user":"    supported_digital_wallet_providers: []","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     supported_digital_wallet_providers: []"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    ewallets: [ {"user":"  ewallets: [","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   ewallets: ["}}
+[info] >      { {"user":"    {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     {"}}
+[info] >        ewallet: 'ewallet_173ff120bb0cfb0cf9e313e3d224524a', {"user":"      ewallet: 'ewallet_173ff120bb0cfb0cf9e313e3d224524a',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       ewallet: 'ewallet_173ff120bb0cfb0cf9e313e3d224524a',"}}
+[info] >        percentage: 100 {"user":"      percentage: 100","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       percentage: 100"}}
+[info] >      } {"user":"    }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     }"}}
+[info] >    ], {"user":"  ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   ],"}}
+[info] >    metadata: { merchant_defined: true }, {"user":"  metadata: { merchant_defined: true },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   metadata: { merchant_defined: true },"}}
+[info] >    url: 'https://sandboxapi.rapyd.net/v1/payments', {"user":"  url: 'https://sandboxapi.rapyd.net/v1/payments',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   url: 'https://sandboxapi.rapyd.net/v1/payments',"}}
+[info] >    data: '{"method":"post","amount":10000,"currency":"USD","description":"Payment by bank transfer","merchant_reference_id":"fc-spctkt0001","payment_method":{"type":"us_sameday_ach_bank","name":"Same day US ACH debit","category":"bank_transfer","image":"https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png","country":"US","payment_flow_type":"bank_transfer","currencies":["USD"],"fields":{"first_name":"Carlos","last_name":"Erazo","company_name":"Beanario Software","account_type":"SAVING","account_number":"5002001485351098","routing_number":"051504597","proof_of_authorization":true},"status":1,"is_cancelable":false,"payment_options":[],"is_expirable":false,"is_online":false,"is_refundable":false,"minimum_expiration_seconds":1,"maximum_expiration_seconds":1209600,"virtual_payment_method_type":"","is_virtual":false,"multiple_overage_allowed":false,"amount_range_per_currency":[{"currency":"USD","maximum_amount":null,"minimum_amount":null}],"is_tokenizable":false,"supported_digital_wallet_providers":[]},"ewallets":[{"ewallet":"ewallet_173ff120bb0cfb0cf9e313e3d224524a","percentage":100}],"metadata":{"merchant_defined":true},"url":"https://sandboxapi.rapyd.net/v1/payments"}', {"user":"  data: '{\"method\":\"post\",\"amount\":10000,\"currency\":\"USD\",\"description\":\"Payment by bank transfer\",\"merchant_reference_id\":\"fc-spctkt0001\",\"payment_method\":{\"type\":\"us_sameday_ach_bank\",\"name\":\"Same day US ACH debit\",\"category\":\"bank_transfer\",\"image\":\"https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png\",\"country\":\"US\",\"payment_flow_type\":\"bank_transfer\",\"currencies\":[\"USD\"],\"fields\":{\"first_name\":\"Carlos\",\"last_name\":\"Erazo\",\"company_name\":\"Beanario Software\",\"account_type\":\"SAVING\",\"account_number\":\"5002001485351098\",\"routing_number\":\"051504597\",\"proof_of_authorization\":true},\"status\":1,\"is_cancelable\":false,\"payment_options\":[],\"is_expirable\":false,\"is_online\":false,\"is_refundable\":false,\"minimum_expiration_seconds\":1,\"maximum_expiration_seconds\":1209600,\"virtual_payment_method_type\":\"\",\"is_virtual\":false,\"multiple_overage_allowed\":false,\"amount_range_per_currency\":[{\"currency\":\"USD\",\"maximum_amount\":null,\"minimum_amount\":null}],\"is_tokenizable\":false,\"supported_digital_wallet_providers\":[]},\"ewallets\":[{\"ewallet\":\"ewallet_173ff120bb0cfb0cf9e313e3d224524a\",\"percentage\":100}],\"metadata\":{\"merchant_defined\":true},\"url\":\"https://sandboxapi.rapyd.net/v1/payments\"}',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   data: '{\"method\":\"post\",\"amount\":10000,\"currency\":\"USD\",\"description\":\"Payment by bank transfer\",\"merchant_reference_id\":\"fc-spctkt0001\",\"payment_method\":{\"type\":\"us_sameday_ach_bank\",\"name\":\"Same day US ACH debit\",\"category\":\"bank_transfer\",\"image\":\"https://iconslib.rapyd.net/checkout/us_sameday_ach_bank.png\",\"country\":\"US\",\"payment_flow_type\":\"bank_transfer\",\"currencies\":[\"USD\"],\"fields\":{\"first_name\":\"Carlos\",\"last_name\":\"Erazo\",\"company_name\":\"Beanario Software\",\"account_type\":\"SAVING\",\"account_number\":\"5002001485351098\",\"routing_number\":\"051504597\",\"proof_of_authorization\":true},\"status\":1,\"is_cancelable\":false,\"payment_options\":[],\"is_expirable\":false,\"is_online\":false,\"is_refundable\":false,\"minimum_expiration_seconds\":1,\"maximum_expiration_seconds\":1209600,\"virtual_payment_method_type\":\"\",\"is_virtual\":false,\"multiple_overage_allowed\":false,\"amount_range_per_currency\":[{\"currency\":\"USD\",\"maximum_amount\":null,\"minimum_amount\":null}],\"is_tokenizable\":false,\"supported_digital_wallet_providers\":[]},\"ewallets\":[{\"ewallet\":\"ewallet_173ff120bb0cfb0cf9e313e3d224524a\",\"percentage\":100}],\"metadata\":{\"merchant_defined\":true},\"url\":\"https://sandboxapi.rapyd.net/v1/payments\"}',"}}
+[info] >    headers: { {"user":"  headers: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   headers: {"}}
+[info] >      access_key: 'F1674F23560DE0B6FF17', {"user":"    access_key: 'F1674F23560DE0B6FF17',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     access_key: 'F1674F23560DE0B6FF17',"}}
+[info] >      'Content-Type': 'application/json', {"user":"    'Content-Type': 'application/json',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     'Content-Type': 'application/json',"}}
+[info] >      salt: '432fbf75b7d9f4bc4e63b1ea', {"user":"    salt: '432fbf75b7d9f4bc4e63b1ea',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     salt: '432fbf75b7d9f4bc4e63b1ea',"}}
+[info] >      signature: 'ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA==', {"user":"    signature: 'ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA==',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     signature: 'ZWI0NThiMGZlMDc5M2IzOTU0NmJlY2EwOGRjNTZhMTc1ZjJkNDg3YWYxMjI4YWJkZDc3YjA2YTgzY2EwN2Q5MA==',"}}
+[info] >      timestamp: '1658784532' {"user":"    timestamp: '1658784532'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     timestamp: '1658784532'"}}
+[info] >    } {"user":"  }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   }"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  response.data...: { {"user":"response.data...: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m response.data...: {"}}
+[info] >    status: { {"user":"  status: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   status: {"}}
+[info] >      error_code: '', {"user":"    error_code: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     error_code: '',"}}
+[info] >      status: 'SUCCESS', {"user":"    status: 'SUCCESS',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     status: 'SUCCESS',"}}
+[info] >      message: '', {"user":"    message: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     message: '',"}}
+[info] >      response_code: '', {"user":"    response_code: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     response_code: '',"}}
+[info] >      operation_id: 'd9d3e14a-bb10-4aa4-8801-789837457168' {"user":"    operation_id: 'd9d3e14a-bb10-4aa4-8801-789837457168'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     operation_id: 'd9d3e14a-bb10-4aa4-8801-789837457168'"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    data: { {"user":"  data: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   data: {"}}
+[info] >      id: 'payment_1ba046a7e92232d7179a77a9126adb83', {"user":"    id: 'payment_1ba046a7e92232d7179a77a9126adb83',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     id: 'payment_1ba046a7e92232d7179a77a9126adb83',"}}
+[info] >      amount: 0, {"user":"    amount: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     amount: 0,"}}
+[info] >      original_amount: 10000, {"user":"    original_amount: 10000,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     original_amount: 10000,"}}
+[info] >      is_partial: false, {"user":"    is_partial: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     is_partial: false,"}}
+[info] >      currency_code: 'USD', {"user":"    currency_code: 'USD',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     currency_code: 'USD',"}}
+[info] >      country_code: 'US', {"user":"    country_code: 'US',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     country_code: 'US',"}}
+[info] >      status: 'ACT', {"user":"    status: 'ACT',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     status: 'ACT',"}}
+[info] >      description: 'Payment by bank transfer', {"user":"    description: 'Payment by bank transfer',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     description: 'Payment by bank transfer',"}}
+[info] >      merchant_reference_id: 'fc-spctkt0001', {"user":"    merchant_reference_id: 'fc-spctkt0001',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     merchant_reference_id: 'fc-spctkt0001',"}}
+[info] >      customer_token: 'cus_071fdd2f6f19003dc7f9c477a7641d34', {"user":"    customer_token: 'cus_071fdd2f6f19003dc7f9c477a7641d34',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     customer_token: 'cus_071fdd2f6f19003dc7f9c477a7641d34',"}}
+[info] >      payment_method: 'other_5cff5b1b0b9dc2886ce013a09831de01', {"user":"    payment_method: 'other_5cff5b1b0b9dc2886ce013a09831de01',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     payment_method: 'other_5cff5b1b0b9dc2886ce013a09831de01',"}}
+[info] >      payment_method_data: { {"user":"    payment_method_data: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     payment_method_data: {"}}
+[info] >        id: 'other_5cff5b1b0b9dc2886ce013a09831de01', {"user":"      id: 'other_5cff5b1b0b9dc2886ce013a09831de01',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       id: 'other_5cff5b1b0b9dc2886ce013a09831de01',"}}
+[info] >        type: 'us_sameday_ach_bank', {"user":"      type: 'us_sameday_ach_bank',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       type: 'us_sameday_ach_bank',"}}
+[info] >        category: 'bank_transfer', {"user":"      category: 'bank_transfer',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       category: 'bank_transfer',"}}
+[info] >        metadata: {}, {"user":"      metadata: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       metadata: {},"}}
+[info] >        image: '', {"user":"      image: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       image: '',"}}
+[info] >        webhook_url: '', {"user":"      webhook_url: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       webhook_url: '',"}}
+[info] >        supporting_documentation: '', {"user":"      supporting_documentation: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       supporting_documentation: '',"}}
+[info] >        next_action: 'not_applicable', {"user":"      next_action: 'not_applicable',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       next_action: 'not_applicable',"}}
+[info] >        bic_swift: '', {"user":"      bic_swift: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       bic_swift: '',"}}
+[info] >        account_last4: '', {"user":"      account_last4: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       account_last4: '',"}}
+[info] >        last_name: 'Erazo', {"user":"      last_name: 'Erazo',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       last_name: 'Erazo',"}}
+[info] >        first_name: 'Carlos', {"user":"      first_name: 'Carlos',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       first_name: 'Carlos',"}}
+[info] >        account_type: 'SAVING', {"user":"      account_type: 'SAVING',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       account_type: 'SAVING',"}}
+[info] >        company_name: 'Beanario Software', {"user":"      company_name: 'Beanario Software',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       company_name: 'Beanario Software',"}}
+[info] >        account_number: '5002001485351098', {"user":"      account_number: '5002001485351098',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       account_number: '5002001485351098',"}}
+[info] >        routing_number: '051504597', {"user":"      routing_number: '051504597',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       routing_number: '051504597',"}}
+[info] >        proof_of_authorization: true {"user":"      proof_of_authorization: true","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m       proof_of_authorization: true"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      expiration: 1659994144, {"user":"    expiration: 1659994144,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     expiration: 1659994144,"}}
+[info] >      captured: true, {"user":"    captured: true,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     captured: true,"}}
+[info] >      refunded: false, {"user":"    refunded: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     refunded: false,"}}
+[info] >      refunded_amount: 0, {"user":"    refunded_amount: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     refunded_amount: 0,"}}
+[info] >      receipt_email: '', {"user":"    receipt_email: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     receipt_email: '',"}}
+[info] >      redirect_url: '', {"user":"    redirect_url: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     redirect_url: '',"}}
+[info] >      complete_payment_url: '', {"user":"    complete_payment_url: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     complete_payment_url: '',"}}
+[info] >      error_payment_url: '', {"user":"    error_payment_url: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     error_payment_url: '',"}}
+[info] >      receipt_number: '', {"user":"    receipt_number: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     receipt_number: '',"}}
+[info] >      flow_type: '', {"user":"    flow_type: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     flow_type: '',"}}
+[info] >      address: null, {"user":"    address: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     address: null,"}}
+[info] >      statement_descriptor: 'N/A', {"user":"    statement_descriptor: 'N/A',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     statement_descriptor: 'N/A',"}}
+[info] >      transaction_id: '', {"user":"    transaction_id: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     transaction_id: '',"}}
+[info] >      created_at: 1658784544, {"user":"    created_at: 1658784544,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     created_at: 1658784544,"}}
+[info] >      metadata: { merchant_defined: true }, {"user":"    metadata: { merchant_defined: true },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     metadata: { merchant_defined: true },"}}
+[info] >      failure_code: '', {"user":"    failure_code: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     failure_code: '',"}}
+[info] >      failure_message: '', {"user":"    failure_message: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     failure_message: '',"}}
+[info] >      paid: false, {"user":"    paid: false,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     paid: false,"}}
+[info] >      paid_at: 0, {"user":"    paid_at: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     paid_at: 0,"}}
+[info] >      dispute: null, {"user":"    dispute: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     dispute: null,"}}
+[info] >      refunds: null, {"user":"    refunds: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     refunds: null,"}}
+[info] >      order: null, {"user":"    order: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     order: null,"}}
+[info] >      outcome: null, {"user":"    outcome: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     outcome: null,"}}
+[info] >      visual_codes: {}, {"user":"    visual_codes: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     visual_codes: {},"}}
+[info] >      textual_codes: {}, {"user":"    textual_codes: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     textual_codes: {},"}}
+[info] >      instructions: [ [Object] ], {"user":"    instructions: [ [Object] ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     instructions: [ [Object] ],"}}
+[info] >      ewallet_id: 'ewallet_173ff120bb0cfb0cf9e313e3d224524a', {"user":"    ewallet_id: 'ewallet_173ff120bb0cfb0cf9e313e3d224524a',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     ewallet_id: 'ewallet_173ff120bb0cfb0cf9e313e3d224524a',"}}
+[info] >      ewallets: [ [Object] ], {"user":"    ewallets: [ [Object] ],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     ewallets: [ [Object] ],"}}
+[info] >      payment_method_options: {}, {"user":"    payment_method_options: {},","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     payment_method_options: {},"}}
+[info] >      payment_method_type: 'us_sameday_ach_bank', {"user":"    payment_method_type: 'us_sameday_ach_bank',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     payment_method_type: 'us_sameday_ach_bank',"}}
+[info] >      payment_method_type_category: 'bank_transfer', {"user":"    payment_method_type_category: 'bank_transfer',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     payment_method_type_category: 'bank_transfer',"}}
+[info] >      fx_rate: 1, {"user":"    fx_rate: 1,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     fx_rate: 1,"}}
+[info] >      merchant_requested_currency: null, {"user":"    merchant_requested_currency: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     merchant_requested_currency: null,"}}
+[info] >      merchant_requested_amount: null, {"user":"    merchant_requested_amount: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     merchant_requested_amount: null,"}}
+[info] >      fixed_side: '', {"user":"    fixed_side: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     fixed_side: '',"}}
+[info] >      payment_fees: null, {"user":"    payment_fees: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     payment_fees: null,"}}
+[info] >      invoice: '', {"user":"    invoice: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     invoice: '',"}}
+[info] >      escrow: null, {"user":"    escrow: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     escrow: null,"}}
+[info] >      group_payment: '', {"user":"    group_payment: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     group_payment: '',"}}
+[info] >      cancel_reason: null, {"user":"    cancel_reason: null,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     cancel_reason: null,"}}
+[info] >      initiation_type: 'customer_present', {"user":"    initiation_type: 'customer_present',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     initiation_type: 'customer_present',"}}
+[info] >      mid: '', {"user":"    mid: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     mid: '',"}}
+[info] >      next_action: 'pending_confirmation', {"user":"    next_action: 'pending_confirmation',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     next_action: 'pending_confirmation',"}}
+[info] >      error_code: '', {"user":"    error_code: '',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     error_code: '',"}}
+[info] >      remitter_information: {} {"user":"    remitter_information: {}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m     remitter_information: {}"}}
+[info] >    } {"user":"  }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m   }"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2022-07-25T21:29:03.708Z] [runtime-status] [35886] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"[runtime-status] [35886] Ephemeral server survived."}}
+[info] i  functions: Finished "httpPaymentServices" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-httpPaymentServices"},"extension":{},"message":"Finished \"httpPaymentServices\" in ~1s"}}
+[debug] [2022-07-25T21:29:03.712Z] [worker-us-central1-httpPaymentServices-7d766752-6161-403b-a4c2-ebebaf5cbf65]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-httpPaymentServices-7d766752-6161-403b-a4c2-ebebaf5cbf65]: IDLE"}}
+[debug] [2022-07-25T21:29:03.712Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-25T21:29:15.538Z] Jul 25, 2022 3:29:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:29:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:30:15.571Z] Jul 25, 2022 3:30:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:30:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:09.763Z] Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:09.783Z] Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:09.784Z] Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nJul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\nJul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:09.911Z] Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:09 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:10.070Z] Jul 25, 2022 3:31:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:12.075Z] Jul 25, 2022 3:31:12 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:12 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:14.118Z] Jul 25, 2022 3:31:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:15.587Z] Jul 25, 2022 3:31:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:16.151Z] Jul 25, 2022 3:31:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:18.169Z] Jul 25, 2022 3:31:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:20.212Z] Jul 25, 2022 3:31:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:22.233Z] Jul 25, 2022 3:31:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:24.245Z] Jul 25, 2022 3:31:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:26.280Z] Jul 25, 2022 3:31:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:26 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:28.306Z] Jul 25, 2022 3:31:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:28 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:30.372Z] Jul 25, 2022 3:31:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:32.452Z] Jul 25, 2022 3:31:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:32 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:34.495Z] Jul 25, 2022 3:31:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:36.517Z] Jul 25, 2022 3:31:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:36 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:38.543Z] Jul 25, 2022 3:31:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:38 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:40.563Z] Jul 25, 2022 3:31:40 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:40 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:42.580Z] Jul 25, 2022 3:31:42 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:42 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:44.595Z] Jul 25, 2022 3:31:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:44 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:46.616Z] Jul 25, 2022 3:31:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:48.632Z] Jul 25, 2022 3:31:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:48 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:50.652Z] Jul 25, 2022 3:31:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:50 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:52.668Z] Jul 25, 2022 3:31:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:52 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:54.683Z] Jul 25, 2022 3:31:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:54 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:56.701Z] Jul 25, 2022 3:31:56 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:56 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:31:58.714Z] Jul 25, 2022 3:31:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:31:58 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:00.730Z] Jul 25, 2022 3:32:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:00 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:02.744Z] Jul 25, 2022 3:32:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:02 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:04.789Z] Jul 25, 2022 3:32:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:06.813Z] Jul 25, 2022 3:32:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:06 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:08.834Z] Jul 25, 2022 3:32:08 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:08 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:10.857Z] Jul 25, 2022 3:32:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:10 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:12.872Z] Jul 25, 2022 3:32:12 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:12 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:14.894Z] Jul 25, 2022 3:32:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:14 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:15.602Z] Jul 25, 2022 3:32:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:15 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:16.918Z] Jul 25, 2022 3:32:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:16 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:18.939Z] Jul 25, 2022 3:32:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:20.959Z] Jul 25, 2022 3:32:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:20 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:22.973Z] Jul 25, 2022 3:32:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:22 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:24.990Z] Jul 25, 2022 3:32:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:24 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:27.169Z] Jul 25, 2022 3:32:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:27 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:29.182Z] Jul 25, 2022 3:32:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:29 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:31.204Z] Jul 25, 2022 3:32:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:33.221Z] Jul 25, 2022 3:32:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:35.249Z] Jul 25, 2022 3:32:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:35 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:37.264Z] Jul 25, 2022 3:32:37 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:37 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:39.281Z] Jul 25, 2022 3:32:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:39 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:41.295Z] Jul 25, 2022 3:32:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:41 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:43.320Z] Jul 25, 2022 3:32:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:45.346Z] Jul 25, 2022 3:32:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:45 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:47.359Z] Jul 25, 2022 3:32:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:49.381Z] Jul 25, 2022 3:32:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:49 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:51.397Z] Jul 25, 2022 3:32:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:51 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:53.412Z] Jul 25, 2022 3:32:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:53 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:55.427Z] Jul 25, 2022 3:32:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:55 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:57.437Z] Jul 25, 2022 3:32:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:57 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:32:59.454Z] Jul 25, 2022 3:32:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:32:59 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:33:01.236Z] Jul 25, 2022 3:33:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:33:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:34:01.248Z] Jul 25, 2022 3:34:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:34:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:35:01.269Z] Jul 25, 2022 3:35:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:35:01 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2022-07-25T21:35:47.184Z] Jul 25, 2022 3:35:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 25, 2022 3:35:47 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}

@@ -1,6 +1,6 @@
 // Firebase Functions SDK
 import functions from "firebase-functions";
-// import admin from "firebase-admin";
+import admin from "firebase-admin";
 import axios from "axios";
 import CryptoJS from "crypto-js";
 import "dotenv/config";
@@ -84,14 +84,14 @@ function createPayment(requestData) {
         console.log("rd:", requestData);
         let response = await axios(requestData);
         console.log("response.data...:", response.data);
-        // Create payment object
-        try {
-          const db = admin.firestore();
-          let account = await db.collection("wallet").doc(requestData.ewallet).collection("accounts").doc(response.data.data.id).create(response.data.data.bank_account);
-          console.log("account", account);
-        } catch (error) {
-          console.log("error creating payment object...:", error);
-        }
+        // // Create payment object
+        // try {
+        //   const db = admin.firestore();
+        //   let account = await db.collection("wallet").doc(requestData.ewallet).collection("accounts").doc(response.data.data.id).create(response.data.data.bank_account);
+        //   console.log("account", account);
+        // } catch (error) {
+        //   console.log("error creating payment object...:", error);
+        // }
         resolve(response.data);
       } catch (error) {
         console.log("error attempting to create payment object...: ", error.response.data);
