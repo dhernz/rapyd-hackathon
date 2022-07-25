@@ -41,6 +41,10 @@ let httpPaymentServices = functions.https.onCall(async (data, context) => {
   data.method = config.method;
   let response = null;
   switch(method) {
+    case "createPayment":
+      response = await createPayment(data);
+      return response;
+      break;
     case "listPaymentMethodsByCountry":
       response = await listPaymentMethodsByCountry(data);
       return response;
@@ -51,6 +55,54 @@ let httpPaymentServices = functions.https.onCall(async (data, context) => {
       break;
   }
 });
+
+function createPayment(requestData) {
+  return new Promise( async (resolve, reject) => {
+    try {
+      requestData.url = "https://sandboxapi.rapyd.net/v1/payments";
+      const data = JSON.stringify(requestData);
+      // const data = JSON.stringify({
+      //     "amount": 101,
+      //     "currency": "USD",
+      //     "description": "Payment by card token",
+      //     "payment_method": "card_8e3d19a8fcb6742decceec77c81b7012",
+      //     "ewallets": [{
+      //             "ewallet": "ewallet_c4450ec162dc72bb068b19194f024d91",
+      //             "percentage": 100
+      //         }
+      //     ],
+      //     "metadata": {
+      //         "merchant_defined": true
+      //     }
+      // });
+      const url_path_create_account = "/v1/payments";
+      const signature = await getSignature("post", url_path_create_account, salt, access_key, secret_key, data);
+      try {
+        requestData.data = data;
+        requestData.method = "post";
+        requestData.headers = await getHeaders(signature);
+        console.log("rd:", requestData);
+        let response = await axios(requestData);
+        console.log("response.data...:", response.data);
+        // Create payment object
+        try {
+          const db = admin.firestore();
+          let account = await db.collection("wallet").doc(requestData.ewallet).collection("accounts").doc(response.data.data.id).create(response.data.data.bank_account);
+          console.log("account", account);
+        } catch (error) {
+          console.log("error creating payment object...:", error);
+        }
+        resolve(response.data);
+      } catch (error) {
+        console.log("error attempting to create payment object...: ", error.response.data);
+        reject(error.response.data);
+      }
+    } catch (error) {
+      console.log(error);
+      reject(error);
+    }
+  });
+}
 
 function listPaymentMethodsByCountry(requestData) {
   return new Promise( async (resolve, reject) => {
