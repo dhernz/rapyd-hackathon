@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1134px" height="260px" viewBox="0 0 1134 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>A0</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3F5FF6" offset="0%"></stop>
+            <stop stop-color="#8DC4FA" offset="52.98099%"></stop>
+            <stop stop-color="#E9BBC4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="A0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(21.000000, 0.000000)">
+            <text id="AstraPay" fill="#323232" font-family="DMSans-Bold, DM Sans" font-size="200" font-weight="bold">
+                <tspan x="228.2" y="198">Astra</tspan>
+                <tspan x="752.2" y="198" font-family="DMSans-MediumItalic, DM Sans" font-style="italic" font-weight="400">Pay</tspan>
+            </text>
+            <polygon id="Path" fill="url(#linearGradient-1)" points="84.2199241 160.896716 84.1450276 217.98391 96.6277862 218 96.7028908 160.646107 119.474147 213.605289 131.00031 208.973244 108.385921 156.377707 149.992828 196.704257 158.830621 188.18234 117.04521 147.682213 171.696184 169.607898 176.479161 158.462831 121.822986 136.533325 181 136.533325 181 124.465469 121.964874 124.465469 176.531172 102.678966 171.764839 91.5248483 117.4328 113.218428 159.211345 73.2408399 150.431805 64.6638125 108.133353 105.13739 130.927494 51.9895469 119.395714 47.3675582 96.7823644 100.095842 96.8572609 43.015286 84.3745023 43 84.2991897 100.358318 61.5258529 47.393504 49.9992736 52.0255494 72.6119989 104.616662 31.0077966 64.2931282 22.1700034 72.8156491 63.9568701 113.316178 9.30527241 91.3888838 4.52042299 102.534957 59.1799264 124.465469 0 124.465469 0 136.533325 59.0394954 136.533325 4.47153218 158.320833 9.2364092 169.475152 63.5663678 147.782376 21.7884471 187.757953 30.5696517 196.336187 72.8651908 155.864219 50.0731299 209.009447 61.6038701 213.631436"></polygon>
+        </g>
+    </g>
+</svg>
