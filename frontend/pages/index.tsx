@@ -5,6 +5,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header';
 import Ticket from '../components/Ticket';
+import PaymentRequest from '../components/PaymentRequest';
 import {
     getAuth,
     isSignInWithEmailLink,
@@ -26,10 +27,13 @@ const Home: NextPage = () => {
   useEffect(() => {
       checkIfSignedIn();
   }, []);
+  const { currentUser, isLoggedIn, logout } = useAuth();
 
   const checkIfSignedIn = () => {
       // Confirm the link is a sign-in with email link.
       const auth = getAuth();
+      console.log('checking if signed in ');
+      
       if (isSignInWithEmailLink(auth, window.location.href)) {
           // Additional state parameters can also be passed via URL.
           // This can be used to continue the user's intended action before triggering
@@ -37,6 +41,8 @@ const Home: NextPage = () => {
           // Get the email if available. This should be available if the user completes
           // the flow on the same device where they started it.
           let email = window.localStorage.getItem("emailForSignIn");
+          console.log('check if signed in email: ', email);
+          
           if (!email) {
               // User opened the link on a different device. To prevent session fixation
               // attacks, ask the user to provide the associated email again. For example:
@@ -54,7 +60,7 @@ const Home: NextPage = () => {
                   // result.additionalUserInfo.profile == null
                   // You can check if the user is new or existing:
                   // result.additionalUserInfo.isNewUser
-                  console.log("result: ", result);
+                  console.log("signInWithEmailLink result: ", result);
               })
               .catch((error: any) => {
                   // Some error occurred, you can inspect the code: error.code
@@ -67,7 +73,8 @@ const Home: NextPage = () => {
   return (
     <div className="container">
       <Header />
-      <Ticket />
+      {!isLoggedIn && <Ticket />}
+      {isLoggedIn && <PaymentRequest />}
     </div>
   )
 }

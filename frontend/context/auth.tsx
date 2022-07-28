@@ -54,6 +54,7 @@ export function AuthProvider({ children }: any) {
         return unsubscribe;
     }, []);
 
+    console.log('currentUser -> ', currentUser);
     const value = {
         currentUser,
         signup,

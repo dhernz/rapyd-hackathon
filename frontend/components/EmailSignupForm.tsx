@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { FormControl, FormLabel, FormErrorMessage, Input, Button, Flex } from '@chakra-ui/react';
-import { Formik, Form, Field } from 'formik';
 import { getAuth, sendSignInLinkToEmail } from "firebase/auth";
 import Router from "next/router";
 import { toast } from "react-toastify";
@@ -24,15 +23,18 @@ const EmailSignupForm = () => {
   }
 
   const [email, setEmail] = useState<string>("");
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
-  const onLogIn = async () => {
+  const attemptLogin = async () => {
+      setIsSubmitting(true);
       const auth = getAuth();
 
       try {
           sendSignInLinkToEmail(auth, email, actionCodeSettings)
               .then(() => {
                   window.localStorage.setItem("emailForSignIn", email);
-                  Router.push("/");
+                  console.log('emailForSignIn -> ', email);
+                  // Router.push("/");
               })
               .catch((error) => {
                   const errorCode = error.code;
@@ -48,6 +50,7 @@ const EmailSignupForm = () => {
                   });
                   return;
               });
+              setIsSubmitting(false);
       } catch(e: any) {
           toast.error(`${e}`, {
               position: "top-right",
@@ -58,46 +61,25 @@ const EmailSignupForm = () => {
               draggable: true,
               progress: undefined,
           });
+          setIsSubmitting(false);
       }
   };
 
   return (
-    <Formik
-        initialValues={{ }}
-        onSubmit={(values, actions) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2))
-            actions.setSubmitting(false)
-          }, 1000)
-        }}
-      >
-        {(props) => (
-          <Form>
-            <Flex align="center" justify={'center'} direction="column">
-              <Field name='email' validate={validateEmail}>
-                {({ field, form }: any) => (
-                  <FormControl isInvalid={form.errors.name && form.touched.name}>
-                    {/* <FormLabel>First name</FormLabel> */}
-                    <Input {...field} placeholder='myemail@gmail.com' />
-                    <FormErrorMessage>{form.errors.name}</FormErrorMessage>
-                  </FormControl>
-                )}
-              </Field>
-              <Button
-                mt={4}
-              //   colorScheme='teal'
-              bgGradient="linear(to-r, #95A3E6, #E9BBC4)"
-                isLoading={props.isSubmitting}
-                type='submit'
-                width="180px"
-              >
-                Buy Ticket Now
-              </Button>
-                
-            </Flex>
-          </Form>
-        )}
-      </Formik>
+      <Flex align="center" justify={'center'} direction="column">
+        <Input placeholder="myemail@gmail.com" value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} />
+        <Button
+          mt={4}
+          //   colorScheme='teal'
+          bgGradient="linear(to-r, #95A3E6, #E9BBC4)"
+          isLoading={isSubmitting}
+          type='submit'
+          width="180px"
+          onClick={attemptLogin}
+        >
+          Buy Ticket Now
+        </Button>
+      </Flex>
   );
 };
 
