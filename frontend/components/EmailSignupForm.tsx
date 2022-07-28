@@ -51,6 +51,7 @@ const EmailSignupForm = () => {
                   return;
               });
               setIsSubmitting(false);
+              Router.push("/");
       } catch(e: any) {
           toast.error(`${e}`, {
               position: "top-right",

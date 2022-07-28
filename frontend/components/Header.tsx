@@ -318,7 +318,7 @@ const NAV_ITEMS: Array<NavItem> = [
             },
             {
                 label: "Innovations in Payment",
-                subLabel: "Making cross border",
+                subLabel: "Fastest way for cross border payments",
                 href: "#",
             },
         ],

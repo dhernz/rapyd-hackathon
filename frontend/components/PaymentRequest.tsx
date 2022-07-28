@@ -130,12 +130,12 @@ const PaymentRequest = () => {
 
                             <Box fontSize="md" mt={4} fontWeight="bold">Country:</Box>
                             <Select placeholder='Select option' onChange={(e: any) => setCountry(e.target.value)}>
-                                {ibanCountry.map((ctry: any) => (<option value={ctry.code}>{ctry.country}</option>))}
+                                {ibanCountry.map((ctry: any) => (<option key={`option_${ctry.country}`} value={ctry.code}>{ctry.country}</option>))}
                             </Select>
 
                             <Box fontSize="md" mt={4} fontWeight="bold">Currency:</Box>
                             <Select placeholder='Select option' onChange={(e: any) => setCurrency(e.target.value)}>
-                                {ibanCurrencyCodes.map((ctry: any) => (<option value={ctry.AlphabeticCode}>{ctry.Currency}</option>))}
+                                {ibanCurrencyCodes.map((crncy: any) => (<option key={`option_${crncy.Currency}`} value={crncy.AlphabeticCode}>{crncy.Currency}</option>))}
                             </Select>
 
                             <Button

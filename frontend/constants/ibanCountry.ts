@@ -427,7 +427,7 @@ const ibanCountry  = [
     },
     {
         "country": "United States of America",
-        "code": "AS",
+        "code": "US",
     },
     {
     "country": "Virgin Islands, British",
