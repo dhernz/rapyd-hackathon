@@ -7,14 +7,14 @@ import axios from "axios";
 import CryptoJS from "crypto-js";
 import "dotenv/config";
 
-const salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
-console.log("salt: "+salt);
-const timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
+// const salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+// console.log("salt: "+salt);
+// const timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
 const access_key = process.env.ACCESS_KEY; // The access key from Client Portal.
 const secret_key = process.env.SECRET_KEY; // Never transmit the secret key by itself.
 const url_path = "/v1/user"; // Portion after the base URL.
 
-async function getSignature(method, url_path, salt, access_key, secret_key, data) {
+async function getSignature(method, url_path, salt, timestamp, access_key, secret_key, data) {
   const to_sign =
     method + url_path + salt + timestamp + access_key + secret_key + data;
   console.log("to_sign:", to_sign);
@@ -64,6 +64,9 @@ let httpWalletServices = functions.https.onCall(async (data, context) => {
 
 function createWallet(requestData) {
   return new Promise(async (resolve, reject) => {
+    const salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+    console.log("salt: "+salt);
+    const timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
     // sample request data body
     try {
       requestData.ewallet_reference_id = requestData.first_name.substring(0,1)
@@ -71,11 +74,11 @@ function createWallet(requestData) {
       + timestamp;
       console.log("wallet id: ", requestData.ewallet_reference_id);
       const data = JSON.stringify(requestData);
-      const signature = await getSignature("post", url_path, salt, access_key, secret_key, data);
+      const signature = await getSignature("post", url_path, salt, timestamp, access_key, secret_key, data);
       try {
           requestData.data = data;
           requestData.method = "post";
-          requestData.headers = await getHeaders(signature);
+          requestData.headers = await getHeaders(signature, salt, timestamp);
           console.log(requestData);
           let response = await axios(requestData);
           console.log(response.data);
@@ -93,6 +96,9 @@ function createWallet(requestData) {
 
 function updateWallet(requestData) {
   return new Promise( async (resolve, reject) => {
+    const salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+    console.log("salt: "+salt);
+    const timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
     try {
       const data = JSON.stringify(requestData);
       // requestData.data = JSON.stringify({
@@ -106,10 +112,10 @@ function updateWallet(requestData) {
           // }
           // "phone_number": "+14155551234" // wallet owner phone number (figure out if this can be updated)
       // });
-      const signature = await getSignature("put", url_path, salt, access_key, secret_key, data);
+      const signature = await getSignature("put", url_path, salt, timestamp, access_key, secret_key, data);
       try {
           requestData.method = "put";
-          requestData.headers = await getHeaders(signature);
+          requestData.headers = await getHeaders(signature, salt, timestamp);
           console.log(requestData);
           let response = await axios(requestData);
           console.log(response.data);
@@ -125,6 +131,9 @@ function updateWallet(requestData) {
 
 function disableWallet(requestData) {
   return new Promise( async (resolve, reject) => {
+    const salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+    console.log("salt: "+salt);
+    const timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
     try {
       requestData.url = requestData.url+"/disable";
       const data = JSON.stringify(requestData);
@@ -132,10 +141,10 @@ function disableWallet(requestData) {
       //     "ewallet": "ewallet_92174c69e1241bd6400ced235205734b" // id returned on creation, required if phone number is not used
       //     // "phone_number": "+14155551234" // wallet owner phone number
       // });
-      const signature = await getSignature("put", url_path+"/disable", salt, access_key, secret_key, data);
+      const signature = await getSignature("put", url_path+"/disable", salt, timestamp, access_key, secret_key, data);
       try {
           requestData.method = "put";
-          requestData.headers = await getHeaders(signature);
+          requestData.headers = await getHeaders(signature, salt, timestamp);
           console.log(requestData);
           let response = await axios(requestData);
           console.log(response.data);
@@ -151,6 +160,9 @@ function disableWallet(requestData) {
 
 function enableWallet(requestData) {
   return new Promise( async (resolve, reject) => {
+    const salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+    console.log("salt: "+salt);
+    const timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
     try {
       requestData.url = requestData.url+"/enable"
       const data = JSON.stringify(requestData);
@@ -158,10 +170,10 @@ function enableWallet(requestData) {
       //     "ewallet": "ewallet_92174c69e1241bd6400ced235205734b" // id returned on creation, required if phone number is not used
       //     // "phone_number": "+14155551234" // wallet owner phone number
       // });
-      const signature = await getSignature("put", url_path+"/enable", salt, access_key, secret_key, data);
+      const signature = await getSignature("put", url_path+"/enable", salt, timestamp, access_key, secret_key, data);
       try {
           requestData.method = "put";
-          requestData.headers = await getHeaders(signature);
+          requestData.headers = await getHeaders(signature, salt, timestamp);
           console.log(requestData);
           let response = await axios(requestData);
           console.log(response.data);
@@ -179,14 +191,17 @@ function enableWallet(requestData) {
 
 function retrieveWallet(requestData) {
   return new Promise( async (resolve, reject) => {
+    const salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+    console.log("salt: "+salt);
+    const timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
     const wallet = requestData.eWallet;
     const data = "";
     // requestData.url = requestData.url+"/ewallet_92174c69e1241bd6400ced235205734b";
     requestData.url = requestData.url+"/"+wallet;
-    const signature = await getSignature("get", url_path+"/"+wallet, salt, access_key, secret_key, data);
+    const signature = await getSignature("get", url_path+"/"+wallet, salt, timestamp, access_key, secret_key, data);
     try {
         requestData.method = "get";
-        requestData.headers = await getHeaders(signature);
+        requestData.headers = await getHeaders(signature, salt, timestamp);
         console.log(requestData);
         let response = await axios(requestData);
         console.log(response.data);
@@ -198,7 +213,7 @@ function retrieveWallet(requestData) {
   });
 };
 
-async function getHeaders(signature) {
+async function getHeaders(signature, salt, timestamp) {
   const headers = {
       "access_key": process.env.ACCESS_KEY,
       "Content-Type": "application/json",

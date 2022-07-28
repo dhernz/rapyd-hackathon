@@ -6,14 +6,11 @@ import axios from "axios";
 import CryptoJS from "crypto-js";
 import "dotenv/config";
 
-const salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
-console.log("salt: "+salt);
-const timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
 const access_key = process.env.ACCESS_KEY; // The access key from Client Portal.
 const secret_key = process.env.SECRET_KEY; // Never transmit the secret key by itself.
 const url_path = "/v1/user"; // Portion after the base URL.
 
-async function getSignature(method, url_path, salt, access_key, secret_key, data) {
+async function getSignature(method, url_path, salt, timestamp, access_key, secret_key, data) {
   const to_sign =
     method + url_path + salt + timestamp + access_key + secret_key + data;
   console.log("to_sign:", to_sign);
@@ -42,6 +39,10 @@ let httpAccountServices = functions.https.onCall(async (data, context) => {
       response = await createAccount(data);
       return response;
       break;
+    case "listCapabilitiesOfAccountByCountry":
+      response = await listCapabilitiesOfAccountByCountry(data);
+      return response;
+      break;
     case "simulateBankTransfer":
       response = await simulateBankTransfer(data);
       return response;
@@ -51,6 +52,9 @@ let httpAccountServices = functions.https.onCall(async (data, context) => {
 
 function createAccount(requestData) {
   return new Promise( async (resolve, reject) => {
+    let salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+    console.log("salt: "+salt);
+    let timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
     try {
       requestData.url = "https://sandboxapi.rapyd.net/v1/issuing/bankaccounts";
       const data = JSON.stringify(requestData);
@@ -66,11 +70,11 @@ function createAccount(requestData) {
       //     }
       // });
       const url_path_create_account = "/v1/issuing/bankaccounts";
-      const signature = await getSignature("post", url_path_create_account, salt, access_key, secret_key, data);
+      const signature = await getSignature("post", url_path_create_account, salt, timestamp, access_key, secret_key, data);
       try {
         requestData.data = data;
         requestData.method = "post";
-        requestData.headers = await getHeaders(signature);
+        requestData.headers = await getHeaders(signature, salt, timestamp);
         console.log("rd:", requestData);
         let response = await axios(requestData);
         console.log("response.data...:", response.data);
@@ -94,8 +98,36 @@ function createAccount(requestData) {
   });
 }
 
+function listCapabilitiesOfAccountByCountry(requestData) {
+  return new Promise( async (resolve, reject) => {
+    let salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+    console.log("salt: "+salt);
+    let timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
+    const countryCode = requestData.countryCode;
+    const currencyCode = requestData.currencyCode;
+    const data = "";
+
+    requestData.url = "https://sandboxapi.rapyd.net/v1/issuing/bankaccounts/capabilities/country="+countryCode+"&currency="+currencyCode;
+    const signature = await getSignature("get", "/v1/issuing/bankaccounts/capabilities/country="+countryCode+"&currency="+currencyCode, salt, timestamp, access_key, secret_key, data);
+    try {
+        requestData.method = "get";
+        requestData.headers = await getHeaders(signature, salt, timestamp);
+        console.log(requestData);
+        let response = await axios(requestData);
+        console.log(response.data);
+        resolve(response.data);
+    } catch (error) {
+        console.log(error.response.data);
+        reject(error.response.data);
+    }
+  });
+};
+
 function simulateBankTransfer(requestData) {
   return new Promise( async (resolve, reject) => {
+    let salt = CryptoJS.lib.WordArray.random(12); // Randomly generated for each request.
+    console.log("salt: "+salt);
+    let timestamp = (Math.floor(new Date().getTime() / 1000) - 10).toString(); // Current Unix time (seconds).
     try {
       requestData.url = "https://sandboxapi.rapyd.net/v1/issuing/bankaccounts/bankaccounttransfertobankaccount";
       const data = JSON.stringify(requestData);
@@ -105,11 +137,11 @@ function simulateBankTransfer(requestData) {
       //     "currency": "EUR"
       // });
       const url_path_simulate_bank_transfer = "/v1/issuing/bankaccounts/bankaccounttransfertobankaccount";
-      const signature = await getSignature("post", url_path_simulate_bank_transfer, salt, access_key, secret_key, data);
+      const signature = await getSignature("post", url_path_simulate_bank_transfer, salt, timestamp, access_key, secret_key, data);
       try {
           requestData.data = data;
           requestData.method = "post";
-          requestData.headers = await getHeaders(signature);
+          requestData.headers = await getHeaders(signature, salt, timestamp);
           console.log("rd:", requestData);
           let response = await axios(requestData);
           console.log(response.data);
@@ -125,7 +157,7 @@ function simulateBankTransfer(requestData) {
   });
 }
 
-async function getHeaders(signature) {
+async function getHeaders(signature, salt, timestamp) {
   const headers = {
       "access_key": process.env.ACCESS_KEY,
       "Content-Type": "application/json",
