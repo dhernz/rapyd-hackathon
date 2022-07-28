@@ -426,6 +426,10 @@ const ibanCountry  = [
     "format": "GB2!n4!a6!n8!n"
     },
     {
+        "country": "United States of America",
+        "code": "AS",
+    },
+    {
     "country": "Virgin Islands, British",
     "length": "24",
     "code": "VG",

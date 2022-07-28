@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Box, Flex, Text, Input, Button, Center, OrderedList, ListItem, Select } from '@chakra-ui/react';
 import ibanCurrencyCodes from '../constants/ibanCurrencyCodes';
 import ibanCountry from '../constants/ibanCountry';
+import axios from 'axios';
+
+const paymentServicesApi = 'https://us-central1-rapyd-spacex.cloudfunctions.net/httpPaymentServices';
+
 
 const PaymentRequest = () => {
     const [amount, setAmount] = useState<string>("");
@@ -10,12 +14,36 @@ const PaymentRequest = () => {
     const [email, setEmail] = useState<string>("");
     const [currency, setCurrency] = useState<string>("");
     const [country, setCountry] = useState<string>("");
+    const [payTypes, setPayTypes] = useState<any>();
+
+    useEffect(() => {
+        if (country && currency) {
+            getPayTypes();
+        }
+    }, [country, currency])
+
+    const getPayTypes = async () => {
+
+        const payload = {
+            "data": {
+                "method": "listPaymentMethodsByCountry",
+                "currencyCode": currency,
+                "countryCode": country
+            }
+        };
+        console.log('payload: ', payload);
+        
+        const newPayTypes = await axios.post(paymentServicesApi, payload);
+        console.log('newPayTypes -> ', newPayTypes);
+        setPayTypes(newPayTypes);
+    }
 
     const sendRequest = () => {
         console.log('sendRequest');
-        
     }
 
+    console.log('payTypes -> ', payTypes);
+    
     return (
         <Box>
 
@@ -102,13 +130,13 @@ const PaymentRequest = () => {
                             <Input bg="white" value={email} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)} placeholder="" />
 
                             <Box fontSize="md" mt={4} fontWeight="bold">Country:</Box>
-                            <Select placeholder='Select option'>
+                            <Select placeholder='Select option' onChange={(e: any) => setCountry(e.target.value)}>
                                 {ibanCountry.map((ctry: any) => (<option value={ctry.code}>{ctry.country}</option>))}
                             </Select>
 
                             <Box fontSize="md" mt={4} fontWeight="bold">Currency:</Box>
-                            <Select placeholder='Select option'>
-                                {ibanCurrencyCodes.map((ctry: any) => (<option value={ctry.NumericCode}>{ctry.Currency}</option>))}
+                            <Select placeholder='Select option' onChange={(e: any) => setCurrency(e.target.value)}>
+                                {ibanCurrencyCodes.map((ctry: any) => (<option value={ctry.AlphabeticCode}>{ctry.Currency}</option>))}
                             </Select>
 
                             <Button
