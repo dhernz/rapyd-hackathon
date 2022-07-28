@@ -46,7 +46,6 @@ const PaymentRequest = () => {
     
     return (
         <Box>
-
             <Center>
                 <Flex minWidth="max-content" alignItems="center" direction="column">
                     <Flex ml={5} width="100%">

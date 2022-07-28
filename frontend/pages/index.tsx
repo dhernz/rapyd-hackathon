@@ -69,12 +69,15 @@ const Home: NextPage = () => {
               });
       }
   };
+  console.log('isLoggedIn', isLoggedIn);
+  console.log('currentUser', currentUser);
+  
 
   return (
     <div className="container">
       <Header />
-      {!isLoggedIn && <Ticket />}
-      {isLoggedIn && <PaymentRequest />}
+      {!currentUser && <Ticket />}
+      {currentUser && <PaymentRequest />}
     </div>
   )
 }
