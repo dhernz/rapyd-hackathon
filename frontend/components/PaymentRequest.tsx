@@ -20,7 +20,7 @@ const PaymentRequest = () => {
     const [country, setCountry] = useState<string>("");
     const [payTypes, setPayTypes] = useState<any>();
     const [paymentResponse, setPaymentResponse] = useState<any>();
-    const { currentUser } = useAuth();
+    const { currentUser, setPaymentData, paymentData } = useAuth();
 
     useEffect(() => {
         if (country && currency) {
@@ -113,6 +113,7 @@ const PaymentRequest = () => {
         const paymentResponse = await axios.post(paymentServicesApi, requestPayload);
         console.log('paymentResponse -> ', paymentResponse);
         setPaymentResponse(paymentResponse);
+        setPaymentData(paymentResponse);
         Router.push("/orders");
     }
 

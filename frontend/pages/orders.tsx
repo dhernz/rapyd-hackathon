@@ -12,7 +12,7 @@ const Orders = () => {
     const [orderId, setOrderId] = useState();
     const [transactions, setTransactions] = useState<any>();
     const [amountDue, setAmountDue] = useState<number>(150000);
-    const { currentUser } = useAuth();
+    const { currentUser, setPaymentData, paymentData } = useAuth();
 
     useEffect(() => {
         currentUser && getOrderData();
@@ -55,13 +55,15 @@ const Orders = () => {
     console.log('currentUser -> ', currentUser);
     console.log('orders -> ', orders, orderId);
     console.log('transactions -> ', transactions);
+    console.log('paymentData -> ', paymentData);
+    
     
     return (
         <Box mt="12">
             <Center>
                 <Flex minWidth="max-content" alignItems="center" direction="column">
                     <Flex ml={5} width="100%">
-                        <Text fontSize="2xl" fontWeight="bold">Orders</Text>
+                        <Text fontFamily="DM Sans" fontSize="2xl" fontWeight="bold">Orders</Text>
                     </Flex>
                     <Box w="100%" >
                         {/* Gray box */}
@@ -93,9 +95,26 @@ const Orders = () => {
                             m={5}
                         >
                             <Box fontWeight="bold" as="h4" noOfLines={1} mb={3} >
-                                Transactions
+                                Make a wire transfe to:
                             </Box>
-                            {transactions && <TransTable title="Transactions" captions={['Amount', 'Paid', 'Account Number', 'Next Action', 'Expiration']} data={transactions} />}
+                            <Text my="4" fontSize="md" color="gray.600">account number:</Text>
+                            <Text fontSize="4xl" fontWeight="bold">{transactions && transactions[0].payment_method_data.account_number}</Text>
+                            <Text my="4" fontSize="md" color="gray.600">routing number:</Text>
+                            <Text fontSize="4xl" fontWeight="bold">{transactions && transactions[0].payment_method_data.routing_number}</Text>
+                        </Box>
+                    </Box>
+                    <Box w="100%" >
+                        {/* Gray box */}
+                        <Box
+                            borderWidth="0px"
+                            borderRadius="lg"
+                            overflow="hidden"
+                            bg="#EEEDED"
+                            color="black"
+                            padding={10}
+                            m={5}
+                        >
+                            {transactions && <TransTable title="Transactions" captions={['Amount', 'Account Number', 'Paid', 'Expiration', 'Next Action']} data={transactions} />}
                         </Box>
                     </Box>
                 </Flex>

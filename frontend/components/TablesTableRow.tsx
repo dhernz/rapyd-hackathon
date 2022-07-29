@@ -10,17 +10,34 @@ import {
   } from "@chakra-ui/react";
   import React from "react";
   
-  function TablesTableRow(props) {
-    const { logo, name, email, subdomain, domain, status, date } = props;
+// ['Amount', 'Paid', 'Account Number', 'Next Action', 'Expiration'
+
+  function TablesTableRow(props: any) {
+    const { original_amount, paid, payment_method_data, next_action, expiration } = props.data;
+    const { account_number } = payment_method_data;
+    console.log('data -> ', props.data);
+    
     const textColor = useColorModeValue("gray.700", "white");
     const bgStatus = useColorModeValue("gray.400", "#1a202c");
     const colorStatus = useColorModeValue("white", "gray.400");
-  
+    const formattedExpiration = timeConverter(Number(expiration));
+    function timeConverter(UNIX_timestamp: number){
+        var a = new Date(UNIX_timestamp * 1000);
+        var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        var year = a.getFullYear();
+        var month = months[a.getMonth()];
+        var date = a.getDate();
+        var hour = a.getHours();
+        var min = a.getMinutes();
+        var sec = a.getSeconds();
+        var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+        return time;
+      }
+    
     return (
       <Tr>
         <Td minWidth={{ sm: "250px" }} pl="0px">
           <Flex align="center" py=".8rem" minWidth="100%" flexWrap="nowrap">
-            <Avatar src={logo} w="50px" borderRadius="12px" me="18px" />
             <Flex direction="column">
               <Text
                 fontSize="md"
@@ -28,10 +45,7 @@ import {
                 fontWeight="bold"
                 minWidth="100%"
               >
-                {name}
-              </Text>
-              <Text fontSize="sm" color="gray.400" fontWeight="normal">
-                {email}
+                {original_amount}
               </Text>
             </Flex>
           </Flex>
@@ -40,40 +54,35 @@ import {
         <Td>
           <Flex direction="column">
             <Text fontSize="md" color={textColor} fontWeight="bold">
-              {domain}
-            </Text>
-            <Text fontSize="sm" color="gray.400" fontWeight="normal">
-              {subdomain}
+              {account_number}
             </Text>
           </Flex>
         </Td>
         <Td>
           <Badge
-            bg={status === "Online" ? "green.400" : bgStatus}
-            color={status === "Online" ? "white" : colorStatus}
+            bg={paid === true ? "green.400" : bgStatus}
+            color={paid === false ? "white" : colorStatus}
             fontSize="16px"
             p="3px 10px"
             borderRadius="8px"
           >
-            {status}
+            {paid ? 'Paid' : 'Pending'}
           </Badge>
         </Td>
         <Td>
           <Text fontSize="md" color={textColor} fontWeight="bold" pb=".5rem">
-            {date}
+            {formattedExpiration}
           </Text>
         </Td>
         <Td>
-          <Button p="0px" bg="transparent" variant="no-hover">
             <Text
               fontSize="md"
               color="gray.400"
               fontWeight="bold"
               cursor="pointer"
             >
-              Edit
+              {next_action}
             </Text>
-          </Button>
         </Td>
       </Tr>
     );
