@@ -28,6 +28,7 @@ export function AuthProvider({ children }: any) {
     const [currentUser, setCurrentUser] = useState();
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
     const [loading, setLoading] = useState(true);
+    const [paymentData, setPaymentData] = useState();
 
     function signup(email: string, password: string) {
         return createUserWithEmailAndPassword(auth, email, password); // return a promise
@@ -63,6 +64,8 @@ export function AuthProvider({ children }: any) {
         resetPassword,
         isLoggedIn,
         loading,
+        paymentData,
+        setPaymentData,
     };
     return (
         <AuthContext.Provider value={value}>

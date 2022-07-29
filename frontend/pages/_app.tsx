@@ -8,6 +8,7 @@ import { AuthProvider } from "../context/auth";
 import Footer from "../components/Footer";
 import theme from '../theme';
 import { initializeApp, getApp, getApps } from "firebase/app";
+import Header from '../components/Header';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -27,6 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AuthProvider>
       <ChakraProvider theme={theme}>
+        <Header />
         <Component {...pageProps} />
         <Footer />
         <ToastContainer

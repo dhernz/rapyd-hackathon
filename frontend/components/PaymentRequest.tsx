@@ -3,6 +3,10 @@ import { Box, Flex, Text, Input, Button, Center, OrderedList, ListItem, Select }
 import ibanCurrencyCodes from '../constants/ibanCurrencyCodes';
 import ibanCountry from '../constants/ibanCountry';
 import axios from 'axios';
+import { useAuth } from "../context/auth";
+import Router from 'next/router';
+import { toast } from "react-toastify";
+import { updateCurrentUser } from '@firebase/auth';
 
 const paymentServicesApi = 'https://us-central1-rapyd-spacex.cloudfunctions.net/httpPaymentServices';
 
@@ -15,6 +19,8 @@ const PaymentRequest = () => {
     const [currency, setCurrency] = useState<string>("");
     const [country, setCountry] = useState<string>("");
     const [payTypes, setPayTypes] = useState<any>();
+    const [paymentResponse, setPaymentResponse] = useState<any>();
+    const { currentUser } = useAuth();
 
     useEffect(() => {
         if (country && currency) {
@@ -35,11 +41,79 @@ const PaymentRequest = () => {
         
         const newPayTypes = await axios.post(paymentServicesApi, payload);
         console.log('newPayTypes -> ', newPayTypes);
-        setPayTypes(newPayTypes);
+        const achPayType = newPayTypes.data.result.data.filter((e: any) => e.type === "us_sameday_ach_bank")
+        setPayTypes(achPayType);
     }
 
-    const sendRequest = () => {
+    const sendRequest = async () => {
         console.log('sendRequest');
+        if (!payTypes || payTypes.length === 0 || !currentUser) {
+            toast.error(`You select both country and currency`, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+            
+            return;
+        }
+        const requestPayload = {
+            "data": {
+                method: "createPayment",
+                amount,
+                currency,
+                "description": "Payment by bank transfer",
+                "merchant_reference_id": "fc-spctkt0002",
+                "metadata": {
+                    "merchant_defined": true,
+                    userId: currentUser.uid,
+                    "product": {
+                        "name": "first class space ticket",
+                        "price": 150000
+                    }
+                },
+                "payment_method": {
+                    ...payTypes[0],
+                    "fields": {
+                        "first_name": name,
+                        "last_name": "LastName",
+                        "account_type": "SAVING",
+                        "account_number": "5002001485351098",
+                        "routing_number": "051504597",
+                        "proof_of_authorization": true
+                    },
+                    "status": 1,
+                    "is_cancelable": false,
+                    "payment_options": [],
+                    "is_expirable": false,
+                    "is_online": false,
+                    "is_refundable": false,
+                    "minimum_expiration_seconds": 1,
+                    "maximum_expiration_seconds": 1209600,
+                    "virtual_payment_method_type": "",
+                    "is_virtual": false,
+                    "multiple_overage_allowed": false,
+                    "amount_range_per_currency": [
+                        {
+                            "currency": "USD",
+                            "maximum_amount": null,
+                            "minimum_amount": null
+                        }
+                    ],
+                    "is_tokenizable": false,
+                    "supported_digital_wallet_providers": []
+                },
+            }
+        }
+        console.log('requestPayload -> ', requestPayload);
+        
+        const paymentResponse = await axios.post(paymentServicesApi, requestPayload);
+        console.log('paymentResponse -> ', paymentResponse);
+        setPaymentResponse(paymentResponse);
+        Router.push("/orders");
     }
 
     console.log('payTypes -> ', payTypes);
@@ -130,12 +204,16 @@ const PaymentRequest = () => {
 
                             <Box fontSize="md" mt={4} fontWeight="bold">Country:</Box>
                             <Select placeholder='Select option' onChange={(e: any) => setCountry(e.target.value)}>
-                                {ibanCountry.map((ctry: any) => (<option key={`option_${ctry.country}`} value={ctry.code}>{ctry.country}</option>))}
+                                {ibanCountry.map((ctry: any, i: number) => (<option key={`option_${ctry.country}_${i}`} value={ctry.code}>{ctry.country}</option>))}
                             </Select>
 
                             <Box fontSize="md" mt={4} fontWeight="bold">Currency:</Box>
                             <Select placeholder='Select option' onChange={(e: any) => setCurrency(e.target.value)}>
-                                {ibanCurrencyCodes.map((crncy: any) => (<option key={`option_${crncy.Currency}`} value={crncy.AlphabeticCode}>{crncy.Currency}</option>))}
+                                {
+                                    ibanCurrencyCodes
+                                        .sort((a: any, b: any) => a.Currency.localeCompare(b.Currency))
+                                        .map((crncy: any, i: number) => (<option key={`option_${crncy.Currency}_${i}`} value={crncy.AlphabeticCode}>{crncy.Currency}</option>))
+                                }
                             </Select>
 
                             <Button

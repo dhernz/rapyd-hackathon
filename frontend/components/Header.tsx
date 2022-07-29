@@ -64,7 +64,8 @@ export default function Header() {
                     flex={{ base: 1 }}
                     justify={{ base: "center", md: "start" }}
                 >
-                    <Image src="/logo.png" w="180px"/>
+                    <Link href={"/"}><Image src="/logo.png" w="180px"/></Link>
+                    
 
                     <Flex display={{ base: "none", md: "flex" }} ml={10}>
                         <DesktopNav />
@@ -79,7 +80,8 @@ export default function Header() {
                 >
                     {currentUser ? (
                         <>
-                            Signed in as {currentUser && currentUser.email}
+                            <Text fontSize="xs" mr="4">Signed in as {currentUser && currentUser.email}</Text>
+                            
                             <Button
                                 as={"a"}
                                 fontSize={"sm"}
