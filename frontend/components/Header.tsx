@@ -326,7 +326,7 @@ const NAV_ITEMS: Array<NavItem> = [
         ],
     },
     {
-        label: "Space Flight Schedule",
-        href: "#",
+        label: "Orders",
+        href: "/orders",
     },
 ];
