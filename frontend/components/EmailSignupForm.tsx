@@ -59,8 +59,7 @@ const EmailSignupForm = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                });
-              // Router.push("/");
+              });
       } catch(e: any) {
           toast.error(`${e}`, {
               position: "top-right",

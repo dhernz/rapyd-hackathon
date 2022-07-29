@@ -24,10 +24,115 @@ import {
     ChevronRightIcon,
 } from "@chakra-ui/icons";
 import { useAuth } from "../context/auth";
+import { useRouter } from 'next/router'
 
 export default function Header() {
+    const router = useRouter();
     const { isOpen, onToggle } = useDisclosure();
     const { currentUser, logout } = useAuth();
+
+
+    const NAV_ITEMS: Array<NavItem> = router.pathname === '/business' ? [
+        {
+            label: "Admin Panel",
+            href: "/business",
+        },
+    ] : [
+        {
+            label: "Tickets",
+            href: "/"
+        },
+        {
+            label: "User Dashboard",
+            href: "/orders",
+        },
+        {
+            label: "About Us",
+            href: "#",
+            children: [
+                {
+                    label: "History",
+                    subLabel: "Using Rapyd for transactions",
+                    href: "#",
+                },
+                {
+                    label: "Innovations in Payment",
+                    subLabel: "Fastest way for cross border payments",
+                    href: "#",
+                },
+            ],
+        },
+    ];
+
+    const DesktopNav = () => {
+        const linkColor = useColorModeValue("gray.600", "gray.200");
+        const linkHoverColor = useColorModeValue("gray.800", "white");
+        const popoverContentBgColor = useColorModeValue("white", "gray.800");
+
+        return (
+            <Stack direction={"row"} spacing={4}>
+                {NAV_ITEMS.map((navItem) => (
+                    <Box key={navItem.label}>
+                        <Popover trigger={"hover"} placement={"bottom-start"}>
+                            <PopoverTrigger>
+                                <Link
+                                    p={2}
+                                    href={navItem.href ?? "#"}
+                                    fontSize={"sm"}
+                                    fontWeight={500}
+                                    color={linkColor}
+                                    _hover={{
+                                        textDecoration: "none",
+                                        color: linkHoverColor,
+                                    }}
+                                >
+                                    {navItem.label}
+                                </Link>
+                            </PopoverTrigger>
+
+                            {navItem.children && (
+                                <PopoverContent
+                                    border={0}
+                                    boxShadow={"xl"}
+                                    bg={popoverContentBgColor}
+                                    p={4}
+                                    rounded={"xl"}
+                                    minW={"sm"}
+                                >
+                                    <Stack>
+                                        {navItem.children.map((child) => (
+                                            <DesktopSubNav
+                                                key={child.label}
+                                                {...child}
+                                            />
+                                        ))}
+                                    </Stack>
+                                </PopoverContent>
+                            )}
+                        </Popover>
+                    </Box>
+                ))}
+            </Stack>
+        );
+    };
+
+
+    const MobileNav = () => {
+        return (
+            <Stack
+                bg={useColorModeValue("white", "gray.800")}
+                p={4}
+                display={{ md: "none" }}
+            >
+                {NAV_ITEMS.map((navItem) => (
+                    <MobileNavItem key={navItem.label} {...navItem} />
+                ))}
+            </Stack>
+        );
+    };
+    
+
+    console.log('path ', router.pathname);
 
     return (
         <Box>
@@ -112,7 +217,7 @@ export default function Header() {
                                     bg: "pink.300",
                                 }}
                             >
-                                <Link href={"/"}>Sign Up</Link>
+                                <Link href={"/business"}>Admin</Link>
                             </Button>
                         </>
                     )}
@@ -124,59 +229,6 @@ export default function Header() {
         </Box>
     );
 }
-
-const DesktopNav = () => {
-    const linkColor = useColorModeValue("gray.600", "gray.200");
-    const linkHoverColor = useColorModeValue("gray.800", "white");
-    const popoverContentBgColor = useColorModeValue("white", "gray.800");
-
-    return (
-        <Stack direction={"row"} spacing={4}>
-            {NAV_ITEMS.map((navItem) => (
-                <Box key={navItem.label}>
-                    <Popover trigger={"hover"} placement={"bottom-start"}>
-                        <PopoverTrigger>
-                            <Link
-                                p={2}
-                                href={navItem.href ?? "#"}
-                                fontSize={"sm"}
-                                fontWeight={500}
-                                color={linkColor}
-                                _hover={{
-                                    textDecoration: "none",
-                                    color: linkHoverColor,
-                                }}
-                            >
-                                {navItem.label}
-                            </Link>
-                        </PopoverTrigger>
-
-                        {navItem.children && (
-                            <PopoverContent
-                                border={0}
-                                boxShadow={"xl"}
-                                bg={popoverContentBgColor}
-                                p={4}
-                                rounded={"xl"}
-                                minW={"sm"}
-                            >
-                                <Stack>
-                                    {navItem.children.map((child) => (
-                                        <DesktopSubNav
-                                            key={child.label}
-                                            {...child}
-                                        />
-                                    ))}
-                                </Stack>
-                            </PopoverContent>
-                        )}
-                    </Popover>
-                </Box>
-            ))}
-        </Stack>
-    );
-};
-
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
     return (
         <Link
@@ -219,20 +271,6 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
                 </Flex>
             </Stack>
         </Link>
-    );
-};
-
-const MobileNav = () => {
-    return (
-        <Stack
-            bg={useColorModeValue("white", "gray.800")}
-            p={4}
-            display={{ md: "none" }}
-        >
-            {NAV_ITEMS.map((navItem) => (
-                <MobileNavItem key={navItem.label} {...navItem} />
-            ))}
-        </Stack>
     );
 };
 
@@ -299,34 +337,3 @@ interface NavItem {
     children?: Array<NavItem>;
     href?: string;
 }
-
-const NAV_ITEMS: Array<NavItem> = [
-    {
-        label: "Tickets",
-        href: "/"
-    },
-    {
-        label: "User Dashboard",
-        href: "/business",
-    },
-    {
-        label: "About Us",
-        href: "#",
-        children: [
-            {
-                label: "History",
-                subLabel: "Using Rapyd for transactions",
-                href: "#",
-            },
-            {
-                label: "Innovations in Payment",
-                subLabel: "Fastest way for cross border payments",
-                href: "#",
-            },
-        ],
-    },
-    {
-        label: "Orders",
-        href: "/orders",
-    },
-];
