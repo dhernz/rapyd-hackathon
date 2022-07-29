@@ -124,7 +124,7 @@ const PaymentRequest = () => {
             <Center>
                 <Flex minWidth="max-content" alignItems="center" direction="column">
                     <Flex ml={5} width="100%">
-                        <Text fontSize="2xl" fontWeight="bold">Welcome 👋🏼!</Text>
+                        <Text mt="8" fontSize="2xl" fontWeight="bold">Welcome 👋🏼!</Text>
                     </Flex>
                     <Box w="100%">
                         {/* Gray box */}
@@ -176,7 +176,7 @@ const PaymentRequest = () => {
                         <Flex justify="center" direction="column">
                             <Input bg="white" value={amount} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setAmount(e.target.value)} placeholder="" />
                         </Flex>
-                        <Box color="gray.300" fontSize="sm">minimum of $10,000 USD</Box>
+                        <Box mt="2" color="gray.600" fontSize="sm">minimum of $10,000 USD</Box>
                         </Box>
                     </Box>
 

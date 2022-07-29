@@ -97,9 +97,9 @@ const Orders = () => {
                             <Box fontWeight="bold" as="h4" noOfLines={1} mb={3} >
                                 Make a wire transfe to:
                             </Box>
-                            <Text my="4" fontSize="md" color="gray.600">account number:</Text>
+                            <Text my="2" fontSize="md" color="gray.600">account number:</Text>
                             <Text fontSize="4xl" fontWeight="bold">{transactions && transactions[0].payment_method_data.account_number}</Text>
-                            <Text my="4" fontSize="md" color="gray.600">routing number:</Text>
+                            <Text my="2" fontSize="md" color="gray.600">routing number:</Text>
                             <Text fontSize="4xl" fontWeight="bold">{transactions && transactions[0].payment_method_data.routing_number}</Text>
                         </Box>
                     </Box>
@@ -122,8 +122,8 @@ const Orders = () => {
                         bgGradient="gray.300"
                         width="180px"
                         onClick={() => console.log('refund')}
-                        >
-                           Initiate Refund
+                    >
+                        Initiate Refund
                     </Button>
                 </Flex>
             </Center>
