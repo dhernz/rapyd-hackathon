@@ -94,12 +94,43 @@ function createPayment(requestData) {
         // Create payment object in firebase collection
         try {
           const db = admin.firestore();
-          let payment = await db.collection("payments").doc(response.data.data.id).create(response.data.data);
-          console.log("payment...:", payment);
+          let orderId = "order"+response.data.data.id.substring(7, response.data.data.id.length);
+          const orderObject = requestData.metadata;
+          // let payment = await db.collection("payments").doc(response.data.data.id).create(response.data.data);
+          let order = null;
+          if(requestData.order_id != "" && requestData.order_id){
+            // order = await db.collection("orders").doc(requestData.order_id).get();
+            orderId = requestData.order_id;
+            order = await db.collection("orders").doc(orderId).get();
+            console.log("order...:", order.data());
+            console.log("original_amount...:", response.data.data.original_amount);
+            console.log("order.total_paid...:", order.data().total_paid);
+            orderObject.total_paid = order.data().total_paid + response.data.data.original_amount;
+            console.log("summed amount...:", orderObject.total_paid);
+            const summedAmount = orderObject.total_paid;
+            let updateTotal = await db.collection("orders").doc(orderId).update({total_paid: summedAmount});
+            console.log("updated order total...:", updateTotal);
+          }
+          else {
+            orderObject.total_paid = response.data.data.original_amount;
+            order = await db.collection("orders").doc(orderId).create(orderObject);
+            console.log("created order...:", order);
+          }
+          console.log("order...:", order);
+          try {
+            let payment = await db.collection("orders")
+              .doc(orderId).collection("payments")
+              .doc(response.data.data.id)
+              .create(response.data.data);
+            console.log("payment...:", payment);
+            response.data.order_id = orderId;
+            resolve(response.data);
+          } catch (error) {
+            console.log("error creating payment object...:", error);
+          }
         } catch (error) {
-          console.log("error creating payment object...:", error);
+          console.log("error creating order...:", error);
         }
-        resolve(response.data);
       } catch (error) {
         console.log("error attempting to create payment object...: ", error.response.data);
         reject(error.response.data);

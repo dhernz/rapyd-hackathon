@@ -6,6 +6,7 @@ import {httpTest} from "./http/test.f.mjs";
 import {httpWalletServices} from "./http/wallet/services.mjs";
 import {httpAccountServices} from "./http/account/services.mjs";
 import {httpPaymentServices} from "./http/payment/services.mjs";
+import {httpPaymentWebhook} from "./http/payment/webhook.mjs";
 
 import {readFile} from 'fs/promises';
 const serviceAccount = JSON.parse(
@@ -29,3 +30,4 @@ export {httpTest};
 export {httpWalletServices};
 export {httpAccountServices};
 export {httpPaymentServices};
+export {httpPaymentWebhook};
