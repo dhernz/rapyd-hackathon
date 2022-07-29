@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Box, Flex, Text, Input, Button, Center, OrderedList, ListItem, Select } from '@chakra-ui/react';
 import { useAuth } from '../context/auth';
 import { collection, query, where, getDocs, getDoc, getFirestore, doc, onSnapshot } from "firebase/firestore";
-
+import TransTable from '../components/TransTable';
 const db: any = getFirestore();
 
 const ordersApi = "https://us-central1-rapyd-spacex.cloudfunctions.net/httpOrderServices";
@@ -95,11 +95,7 @@ const Orders = () => {
                             <Box fontWeight="bold" as="h4" noOfLines={1} mb={3} >
                                 Transactions
                             </Box>
-                            {transactions.map((trans: any) => {
-                                return (
-                                    <Box>{trans.original_amount}</Box>
-                                )
-                            })}
+                            {transactions && <TransTable title="Transactions" captions={['Amount', 'Paid', 'Account Number', 'Next Action', 'Expiration']} data={transactions} />}
                         </Box>
                     </Box>
                 </Flex>

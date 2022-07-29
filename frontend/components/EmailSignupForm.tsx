@@ -51,7 +51,16 @@ const EmailSignupForm = () => {
                   return;
               });
               setIsSubmitting(false);
-              Router.push("/");
+              toast('Success! Check your email spam folder for the magic link!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+              // Router.push("/");
       } catch(e: any) {
           toast.error(`${e}`, {
               position: "top-right",
