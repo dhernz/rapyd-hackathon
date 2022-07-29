@@ -204,15 +204,14 @@ const PaymentRequest = () => {
 
                             <Box fontSize="md" mt={4} fontWeight="bold">Country:</Box>
                             <Select placeholder='Select option' onChange={(e: any) => setCountry(e.target.value)}>
-                                {ibanCountry.map((ctry: any, i: number) => (<option key={`option_${ctry.country}_${i}`} value={ctry.code}>{ctry.country}</option>))}
+                                {ibanCountry.map((ctry: any, i: number) => (<option key={`option_${ctry.value}_${i}`} value={ctry.value}>{ctry.label}</option>))}
                             </Select>
 
                             <Box fontSize="md" mt={4} fontWeight="bold">Currency:</Box>
                             <Select placeholder='Select option' onChange={(e: any) => setCurrency(e.target.value)}>
                                 {
                                     ibanCurrencyCodes
-                                        .sort((a: any, b: any) => a.Currency.localeCompare(b.Currency))
-                                        .map((crncy: any, i: number) => (<option key={`option_${crncy.Currency}_${i}`} value={crncy.AlphabeticCode}>{crncy.Currency}</option>))
+                                        .map((crncy: any, i: number) => (<option key={`option_${crncy.value}_${i}`} value={crncy.value}>{crncy.label}</option>))
                                 }
                             </Select>
 
