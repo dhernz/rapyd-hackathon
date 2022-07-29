@@ -117,6 +117,14 @@ const Orders = () => {
                             {transactions && <TransTable title="Transactions" captions={['Amount', 'Account Number', 'Paid', 'Expiration', 'Next Action']} data={transactions} />}
                         </Box>
                     </Box>
+                    <Button
+                        mt={4}
+                        bgGradient="gray.300"
+                        width="180px"
+                        onClick={() => console.log('refund')}
+                        >
+                           Initiate Refund
+                    </Button>
                 </Flex>
             </Center>
         </Box>
