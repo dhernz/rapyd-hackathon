@@ -303,11 +303,11 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
     {
         label: "Tickets",
-        href: "#"
+        href: "/"
     },
     {
         label: "User Dashboard",
-        href: "#",
+        href: "/business",
     },
     {
         label: "About Us",
